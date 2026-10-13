@@ -1,0 +1,59 @@
+{
+  "run_id": "queue-demo-local-003",
+  "job_type": "cpu",
+  "k6_version": "k6.exe v2.2.0 (commit/00a9a1b7f5, go1.26.5, windows/amd64)",
+  "smoke_mode": false,
+  "schedule": [
+    {
+      "name": "step_1",
+      "startTime": "0s",
+      "duration": "60s",
+      "rate": 5,
+      "preAllocatedVUs": 10,
+      "maxVUs": 25
+    },
+    {
+      "name": "step_2",
+      "startTime": "60s",
+      "duration": "60s",
+      "rate": 20,
+      "preAllocatedVUs": 30,
+      "maxVUs": 60
+    },
+    {
+      "name": "step_3",
+      "startTime": "120s",
+      "duration": "60s",
+      "rate": 50,
+      "preAllocatedVUs": 75,
+      "maxVUs": 150
+    },
+    {
+      "name": "step_4",
+      "startTime": "180s",
+      "duration": "60s",
+      "rate": 10,
+      "preAllocatedVUs": 15,
+      "maxVUs": 30
+    }
+  ],
+  "offered_load_complete": true,
+  "iterations_completed": 5103,
+  "requests_completed": 5103,
+  "request_attempts_started": 5103,
+  "request_attempts_completed": 5103,
+  "dropped_iterations": 0,
+  "outcomes": {
+    "accepted": 4957,
+    "non_accepted_responses": 0,
+    "transport_errors": 146,
+    "http_failure_rate": 0.028610621203213796
+  },
+  "latency_ms": {
+    "count": 5103,
+    "mean": 32.82916880266497,
+    "median": 17.0091,
+    "p95": 136.98962999999983,
+    "max": 585.4058
+  }
+}

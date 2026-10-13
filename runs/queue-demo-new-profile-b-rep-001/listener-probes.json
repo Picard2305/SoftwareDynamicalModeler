@@ -1,0 +1,2117 @@
+[
+  {
+    "timestamp_utc": "2026-10-13T02:43:40.700660Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:40.902501Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:41.104788Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:41.308637Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:41.528216Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:41.744462Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:41.959572Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:42.176613Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:42.394516Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:42.612605Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:42.814829Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:43.018653Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:43.223200Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:43.442146Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:43.643632Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:43.859857Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:44.069099Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:44.270688Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:44.490494Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:44.693209Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:44.896057Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:45.113295Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:45.320883Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:45.523707Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:45.724985Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:45.937004Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:46.146941Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:46.362517Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:46.565475Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:46.784420Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:46.996113Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:47.208707Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:47.428538Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:47.646186Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:47.867218Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:48.073829Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:48.285762Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:48.502572Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:48.711251Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:48.912704Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:49.132655Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:49.334422Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:49.536931Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:49.739220Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:49.942239Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:50.144896Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:50.356333Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:50.576939Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:50.780551Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:50.985432Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:51.214076Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:51.424552Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:51.628779Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:51.841411Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:52.054065Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:52.256269Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:52.471838Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:52.685736Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:52.907183Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:53.123766Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:53.342051Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:53.559777Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:53.776088Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:53.991007Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:54.194185Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:54.414796Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:54.662555Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:54.872519Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:55.081891Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:55.287614Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:55.492669Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:55.704818Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:55.923060Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:56.146420Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:56.372809Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:56.597364Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:56.821728Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:57.035707Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:57.243752Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:57.456488Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:57.677625Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:57.883229Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:58.086275Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:58.302259Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:58.517373Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:58.731469Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:58.935842Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:59.153914Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:59.369554Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:59.580411Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:43:59.788316Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:00.002193Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:00.217938Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:00.432385Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:00.634782Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:00.848530Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:01.067070Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:01.281240Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:01.482691Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:01.711726Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:01.936652Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:02.147666Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:02.350587Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:02.569769Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:02.803893Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:03.017945Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:03.233542Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:03.435449Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:03.638866Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:03.860905Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:04.076088Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:04.295219Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:04.508543Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:04.724663Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:04.928513Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:05.131369Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:05.353162Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:05.562404Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:05.773562Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:05.982397Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:06.183064Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:06.385372Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:06.593708Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:06.812955Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:07.023649Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:07.226315Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:07.432045Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:07.644606Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:07.854236Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:08.070860Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:08.292320Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:08.494882Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:08.713213Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:08.915384Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:09.126068Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:09.358646Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:09.590350Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:09.820468Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:10.023147Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:10.234642Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:10.440454Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:10.643007Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:10.853104Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:11.058019Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:11.271365Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:11.474827Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:11.691998Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:11.904492Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:12.121607Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:12.334966Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:12.546401Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:12.766130Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:12.985945Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:13.187063Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:13.413659Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:13.615530Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:13.850258Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:14.053841Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:14.263442Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:14.468983Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:14.685491Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:14.901481Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:15.109708Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:15.336806Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:15.620969Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:15.845192Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:16.060324Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:16.270143Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:16.489821Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:16.704113Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:16.914171Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:17.116931Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:17.330721Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:17.536267Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:17.755943Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:17.962939Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:18.169645Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:18.379640Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:18.587379Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:18.804099Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:19.012432Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:19.213755Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:19.441395Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:19.652865Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:19.866154Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:20.069252Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:20.282251Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:20.510941Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:20.712110Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:20.933817Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:21.149262Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:21.365477Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:21.575831Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:21.797585Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:22.015544Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:22.225325Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:22.463625Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:22.694594Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:22.910851Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:23.132288Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:23.362409Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:23.565000Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:23.776290Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:23.978992Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:24.203484Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:24.426490Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:24.661926Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:24.892969Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:25.111085Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:25.325480Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:25.531445Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:25.748080Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:25.955965Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:26.177279Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:26.392248Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:26.608778Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:26.822387Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:27.035034Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:27.237261Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:27.444932Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:27.655665Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:27.858709Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:28.065769Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:28.278653Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:28.499167Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:28.702528Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:28.924072Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:29.141248Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:29.352183Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:29.565425Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:29.785035Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:29.986378Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:30.205673Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:30.428346Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:30.640476Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:30.857500Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:31.062596Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:31.281235Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:31.505413Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:31.716769Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:31.935559Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:32.156444Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:32.372531Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:32.574463Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:32.805520Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:33.033737Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:33.240836Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:33.450581Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:33.673783Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:33.897515Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:34.115201Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:34.324394Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:34.535358Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:34.755542Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:34.964003Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:35.209181Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:35.412756Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:35.623253Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:35.827860Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:36.058825Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:36.265460Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:36.469430Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:36.683825Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:36.901997Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:37.118272Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:37.332543Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:37.536589Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:37.750084Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:37.953732Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:38.158396Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:38.366032Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:38.579280Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:38.784315Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:38.987598Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:39.194525Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:39.401448Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:39.634216Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:39.850460Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:40.056644Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:40.271057Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:40.474380Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:40.679648Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:40.882519Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:41.094468Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:41.298183Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:41.504377Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:41.712725Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:41.916878Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:42.144937Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:42.371292Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:42.582597Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:42.794125Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:43.002456Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:43.215519Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:43.444922Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:43.647688Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:43.862682Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:44.064080Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:44.269466Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:44.475130Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:44.683939Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:44.910530Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:45.122442Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:45.335471Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:45.560639Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:45.775988Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:45.991059Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:46.209377Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:46.426141Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:46.650790Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:46.865937Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:47.074468Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:47.275994Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:47.484920Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:47.711717Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:47.921914Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:48.123654Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:48.344719Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:48.560437Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:48.775669Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:48.988830Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:49.194294Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:49.402573Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:49.605932Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:49.815275Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:50.037811Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:50.259952Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:50.475375Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:50.695552Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:50.907004Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:51.124355Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:51.344747Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:51.560940Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:51.778007Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:51.988510Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:52.190137Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:52.402409Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:52.612197Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:52.825636Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:53.048963Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:53.250786Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:53.485285Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:53.699076Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:53.915629Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:54.120255Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:54.341296Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:54.548586Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:54.766426Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:54.997451Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:55.206572Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:55.435481Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:55.650868Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:55.880894Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:56.101701Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:56.316080Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:56.522751Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:56.732252Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:56.936437Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:57.150791Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:57.360270Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:57.570893Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:57.781202Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:57.992028Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:58.205558Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:58.421925Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:58.635413Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:58.860220Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:59.076444Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:59.306027Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:59.542840Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:59.750839Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:44:59.975282Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:00.195464Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:00.402356Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:00.615944Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:00.822479Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:01.045071Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:01.251491Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:01.476020Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:01.707393Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:01.921518Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:02.135600Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:02.341027Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:02.567443Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:02.790611Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:03.002547Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:03.215275Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:03.425255Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:03.660505Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:03.875634Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:04.090343Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:04.297395Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:04.515589Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:04.745438Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:04.966416Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:05.171214Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:05.380843Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:05.601260Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:05.813209Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:06.017727Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:06.247145Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:06.460209Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:06.675465Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:06.893050Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:07.109642Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:07.324652Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:07.545378Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:07.756207Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:07.972168Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:08.181678Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:08.401149Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:08.603251Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:08.810830Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:09.019653Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:09.235169Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:09.457028Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:09.675230Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:09.880242Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:10.082316Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:10.291177Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:10.519992Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:10.740531Z",
+    "connected": true,
+    "server_thread_alive": true
+  },
+  {
+    "timestamp_utc": "2026-10-13T02:45:10.965281Z",
+    "connected": true,
+    "server_thread_alive": true
+  }
+]

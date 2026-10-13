@@ -1,0 +1,14 @@
+{
+  "completed_jobs": 1200,
+  "jobs_with_inferred_wait": 685,
+  "max_event_reconstructed_in_system": 64,
+  "max_sampled_backlog": 63,
+  "mean_inferred_wait_ms": 991.5692351261774,
+  "p95_inferred_wait_ms": 3161.449909210205,
+  "phase_job_counts": {
+    "baseline": 300,
+    "overload": 600,
+    "recovery": 300
+  },
+  "time_weighted_mean_in_system": 13.974906422922546
+}

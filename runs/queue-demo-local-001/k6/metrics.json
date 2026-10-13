@@ -1,0 +1,131 @@
+{"type":"Metric","data":{"name":"request_attempts_started","type":"counter","contains":"default","thresholds":[],"submetrics":null},"metric":"request_attempts_started"}
+{"metric":"request_attempts_started","type":"Point","data":{"time":"2026-10-01T19:38:36.5485763-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"type":"Metric","data":{"name":"http_reqs","type":"counter","contains":"default","thresholds":[],"submetrics":null},"metric":"http_reqs"}
+{"metric":"http_reqs","type":"Point","data":{"time":"2026-10-01T19:38:36.5752919-05:00","value":1,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"type":"Metric","data":{"name":"http_req_duration","type":"trend","contains":"time","thresholds":[],"submetrics":null},"metric":"http_req_duration"}
+{"metric":"http_req_duration","type":"Point","data":{"time":"2026-10-01T19:38:36.5752919-05:00","value":14.4766,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"type":"Metric","data":{"name":"http_req_blocked","type":"trend","contains":"time","thresholds":[],"submetrics":null},"metric":"http_req_blocked"}
+{"metric":"http_req_blocked","type":"Point","data":{"time":"2026-10-01T19:38:36.5752919-05:00","value":8.6709,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"type":"Metric","data":{"name":"http_req_connecting","type":"trend","contains":"time","thresholds":[],"submetrics":null},"metric":"http_req_connecting"}
+{"metric":"http_req_connecting","type":"Point","data":{"time":"2026-10-01T19:38:36.5752919-05:00","value":2.2279,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"type":"Metric","data":{"name":"http_req_tls_handshaking","type":"trend","contains":"time","thresholds":[],"submetrics":null},"metric":"http_req_tls_handshaking"}
+{"metric":"http_req_tls_handshaking","type":"Point","data":{"time":"2026-10-01T19:38:36.5752919-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"type":"Metric","data":{"name":"http_req_sending","type":"trend","contains":"time","thresholds":[],"submetrics":null},"metric":"http_req_sending"}
+{"metric":"http_req_sending","type":"Point","data":{"time":"2026-10-01T19:38:36.5752919-05:00","value":0.97,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"type":"Metric","data":{"name":"http_req_waiting","type":"trend","contains":"time","thresholds":[],"submetrics":null},"metric":"http_req_waiting"}
+{"metric":"http_req_waiting","type":"Point","data":{"time":"2026-10-01T19:38:36.5752919-05:00","value":1.9338,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"type":"Metric","data":{"name":"http_req_receiving","type":"trend","contains":"time","thresholds":[],"submetrics":null},"metric":"http_req_receiving"}
+{"metric":"http_req_receiving","type":"Point","data":{"time":"2026-10-01T19:38:36.5752919-05:00","value":11.5728,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"type":"Metric","data":{"name":"http_req_failed","type":"rate","contains":"default","thresholds":[],"submetrics":null},"metric":"http_req_failed"}
+{"metric":"http_req_failed","type":"Point","data":{"time":"2026-10-01T19:38:36.5752919-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"type":"Metric","data":{"name":"request_attempts_completed","type":"counter","contains":"default","thresholds":[],"submetrics":null},"metric":"request_attempts_completed"}
+{"metric":"request_attempts_completed","type":"Point","data":{"time":"2026-10-01T19:38:36.5844231-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"type":"Metric","data":{"name":"accepted_jobs","type":"counter","contains":"default","thresholds":[],"submetrics":null},"metric":"accepted_jobs"}
+{"metric":"accepted_jobs","type":"Point","data":{"time":"2026-10-01T19:38:36.5844231-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"type":"Metric","data":{"name":"checks","type":"rate","contains":"default","thresholds":[],"submetrics":null},"metric":"checks"}
+{"metric":"checks","type":"Point","data":{"time":"2026-10-01T19:38:36.5844231-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"type":"Metric","data":{"name":"data_sent","type":"counter","contains":"data","thresholds":[],"submetrics":null},"metric":"data_sent"}
+{"metric":"data_sent","type":"Point","data":{"time":"2026-10-01T19:38:36.5844231-05:00","value":254,"tags":{"scenario":"smoke"}}}
+{"type":"Metric","data":{"name":"data_received","type":"counter","contains":"data","thresholds":[],"submetrics":null},"metric":"data_received"}
+{"metric":"data_received","type":"Point","data":{"time":"2026-10-01T19:38:36.5844231-05:00","value":186,"tags":{"scenario":"smoke"}}}
+{"type":"Metric","data":{"name":"iteration_duration","type":"trend","contains":"time","thresholds":[],"submetrics":null},"metric":"iteration_duration"}
+{"metric":"iteration_duration","type":"Point","data":{"time":"2026-10-01T19:38:36.5844231-05:00","value":40.0329,"tags":{"scenario":"smoke"}}}
+{"type":"Metric","data":{"name":"iterations","type":"counter","contains":"default","thresholds":[],"submetrics":null},"metric":"iterations"}
+{"metric":"iterations","type":"Point","data":{"time":"2026-10-01T19:38:36.5844231-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"type":"Metric","data":{"name":"vus","type":"gauge","contains":"default","thresholds":[],"submetrics":null},"metric":"vus"}
+{"metric":"vus","type":"Point","data":{"time":"2026-10-01T19:38:37.5427591-05:00","value":0,"tags":{}}}
+{"type":"Metric","data":{"name":"vus_max","type":"gauge","contains":"default","thresholds":[],"submetrics":null},"metric":"vus_max"}
+{"metric":"vus_max","type":"Point","data":{"time":"2026-10-01T19:38:37.5427591-05:00","value":1,"tags":{}}}
+{"metric":"request_attempts_started","type":"Point","data":{"time":"2026-10-01T19:38:37.6917054-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"http_reqs","type":"Point","data":{"time":"2026-10-01T19:38:37.7241373-05:00","value":1,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_duration","type":"Point","data":{"time":"2026-10-01T19:38:37.7241373-05:00","value":24.7906,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_blocked","type":"Point","data":{"time":"2026-10-01T19:38:37.7241373-05:00","value":7.6413,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_connecting","type":"Point","data":{"time":"2026-10-01T19:38:37.7241373-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_tls_handshaking","type":"Point","data":{"time":"2026-10-01T19:38:37.7241373-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_sending","type":"Point","data":{"time":"2026-10-01T19:38:37.7241373-05:00","value":1.0425,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_waiting","type":"Point","data":{"time":"2026-10-01T19:38:37.7241373-05:00","value":10.3506,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_receiving","type":"Point","data":{"time":"2026-10-01T19:38:37.7241373-05:00","value":13.3975,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_failed","type":"Point","data":{"time":"2026-10-01T19:38:37.7241373-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"request_attempts_completed","type":"Point","data":{"time":"2026-10-01T19:38:37.7267529-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"accepted_jobs","type":"Point","data":{"time":"2026-10-01T19:38:37.7267529-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"checks","type":"Point","data":{"time":"2026-10-01T19:38:37.7267529-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"data_sent","type":"Point","data":{"time":"2026-10-01T19:38:37.7267529-05:00","value":254,"tags":{"scenario":"smoke"}}}
+{"metric":"data_received","type":"Point","data":{"time":"2026-10-01T19:38:37.7267529-05:00","value":186,"tags":{"scenario":"smoke"}}}
+{"metric":"iteration_duration","type":"Point","data":{"time":"2026-10-01T19:38:37.7267529-05:00","value":35.0475,"tags":{"scenario":"smoke"}}}
+{"metric":"iterations","type":"Point","data":{"time":"2026-10-01T19:38:37.7267529-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"vus","type":"Point","data":{"time":"2026-10-01T19:38:38.5352915-05:00","value":0,"tags":{}}}
+{"metric":"vus_max","type":"Point","data":{"time":"2026-10-01T19:38:38.5352915-05:00","value":1,"tags":{}}}
+{"metric":"request_attempts_started","type":"Point","data":{"time":"2026-10-01T19:38:38.5445808-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"http_reqs","type":"Point","data":{"time":"2026-10-01T19:38:38.5595845-05:00","value":1,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_duration","type":"Point","data":{"time":"2026-10-01T19:38:38.5595845-05:00","value":13.7823,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_blocked","type":"Point","data":{"time":"2026-10-01T19:38:38.5595845-05:00","value":0.7264,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_connecting","type":"Point","data":{"time":"2026-10-01T19:38:38.5595845-05:00","value":0.7264,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_tls_handshaking","type":"Point","data":{"time":"2026-10-01T19:38:38.5595845-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_sending","type":"Point","data":{"time":"2026-10-01T19:38:38.5595845-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_waiting","type":"Point","data":{"time":"2026-10-01T19:38:38.5595845-05:00","value":12.5171,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_receiving","type":"Point","data":{"time":"2026-10-01T19:38:38.5595845-05:00","value":1.2652,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_failed","type":"Point","data":{"time":"2026-10-01T19:38:38.5595845-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"request_attempts_completed","type":"Point","data":{"time":"2026-10-01T19:38:38.5601022-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"accepted_jobs","type":"Point","data":{"time":"2026-10-01T19:38:38.5601391-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"checks","type":"Point","data":{"time":"2026-10-01T19:38:38.5601391-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"data_sent","type":"Point","data":{"time":"2026-10-01T19:38:38.5601391-05:00","value":254,"tags":{"scenario":"smoke"}}}
+{"metric":"data_received","type":"Point","data":{"time":"2026-10-01T19:38:38.5601391-05:00","value":186,"tags":{"scenario":"smoke"}}}
+{"metric":"iteration_duration","type":"Point","data":{"time":"2026-10-01T19:38:38.5601391-05:00","value":15.5583,"tags":{"scenario":"smoke"}}}
+{"metric":"iterations","type":"Point","data":{"time":"2026-10-01T19:38:38.5601391-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"vus","type":"Point","data":{"time":"2026-10-01T19:38:39.5354682-05:00","value":0,"tags":{}}}
+{"metric":"vus_max","type":"Point","data":{"time":"2026-10-01T19:38:39.5354682-05:00","value":1,"tags":{}}}
+{"metric":"request_attempts_started","type":"Point","data":{"time":"2026-10-01T19:38:39.5453766-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"http_reqs","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":1,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_duration","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":11.3123,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_blocked","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":3.5301,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_connecting","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":3.5301,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_tls_handshaking","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_sending","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_waiting","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":10.8466,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_receiving","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":0.4657,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_failed","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"request_attempts_completed","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"accepted_jobs","type":"Point","data":{"time":"2026-10-01T19:38:39.560219-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"checks","type":"Point","data":{"time":"2026-10-01T19:38:39.5607612-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"data_sent","type":"Point","data":{"time":"2026-10-01T19:38:39.5607612-05:00","value":254,"tags":{"scenario":"smoke"}}}
+{"metric":"data_received","type":"Point","data":{"time":"2026-10-01T19:38:39.5607612-05:00","value":186,"tags":{"scenario":"smoke"}}}
+{"metric":"iteration_duration","type":"Point","data":{"time":"2026-10-01T19:38:39.5607612-05:00","value":15.3846,"tags":{"scenario":"smoke"}}}
+{"metric":"iterations","type":"Point","data":{"time":"2026-10-01T19:38:39.5607612-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"vus","type":"Point","data":{"time":"2026-10-01T19:38:40.541528-05:00","value":0,"tags":{}}}
+{"metric":"vus_max","type":"Point","data":{"time":"2026-10-01T19:38:40.541528-05:00","value":1,"tags":{}}}
+{"metric":"request_attempts_started","type":"Point","data":{"time":"2026-10-01T19:38:40.5452308-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"http_reqs","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":1,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_duration","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":15.5188,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_blocked","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":3.3761,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_connecting","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":3.3761,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_tls_handshaking","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_sending","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":0.4885,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_waiting","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":12.3056,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_receiving","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":2.7247,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_failed","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"request_attempts_completed","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"accepted_jobs","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"checks","type":"Point","data":{"time":"2026-10-01T19:38:40.5645024-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"data_sent","type":"Point","data":{"time":"2026-10-01T19:38:40.5650266-05:00","value":254,"tags":{"scenario":"smoke"}}}
+{"metric":"data_received","type":"Point","data":{"time":"2026-10-01T19:38:40.5650266-05:00","value":186,"tags":{"scenario":"smoke"}}}
+{"metric":"iteration_duration","type":"Point","data":{"time":"2026-10-01T19:38:40.5650266-05:00","value":19.7958,"tags":{"scenario":"smoke"}}}
+{"metric":"iterations","type":"Point","data":{"time":"2026-10-01T19:38:40.5650266-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"request_attempts_started","type":"Point","data":{"time":"2026-10-01T19:38:41.5704204-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"vus","type":"Point","data":{"time":"2026-10-01T19:38:41.5708434-05:00","value":1,"tags":{}}}
+{"metric":"vus_max","type":"Point","data":{"time":"2026-10-01T19:38:41.5708434-05:00","value":1,"tags":{}}}
+{"metric":"http_reqs","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":1,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_duration","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":21.2535,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_blocked","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":3.561,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_connecting","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":3.067,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_tls_handshaking","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_sending","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_waiting","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":19.7407,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_receiving","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":1.5128,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"http_req_failed","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":0,"tags":{"method":"POST","name":"POST /jobs","scenario":"smoke","status":"202"}}}
+{"metric":"request_attempts_completed","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"accepted_jobs","type":"Point","data":{"time":"2026-10-01T19:38:41.5956579-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"checks","type":"Point","data":{"time":"2026-10-01T19:38:41.5961502-05:00","value":1,"tags":{"scenario":"smoke"}}}
+{"metric":"data_sent","type":"Point","data":{"time":"2026-10-01T19:38:41.5961502-05:00","value":254,"tags":{"scenario":"smoke"}}}
+{"metric":"data_received","type":"Point","data":{"time":"2026-10-01T19:38:41.5961502-05:00","value":186,"tags":{"scenario":"smoke"}}}
+{"metric":"iteration_duration","type":"Point","data":{"time":"2026-10-01T19:38:41.5961502-05:00","value":26.1008,"tags":{"scenario":"smoke"}}}
+{"metric":"iterations","type":"Point","data":{"time":"2026-10-01T19:38:41.5961502-05:00","value":1,"tags":{"scenario":"smoke"}}}

@@ -1,0 +1,15 @@
+{
+  "accepted_total": 3905,
+  "app_version": null,
+  "clean_shutdown": true,
+  "completed_total": 3905,
+  "cpu_work_units": 100000,
+  "end_time_utc": "2026-10-07T02:14:07.090395Z",
+  "row_count": 189,
+  "run_id": "queue-demo-local-011",
+  "sampling_interval_seconds": 1.0,
+  "start_time_utc": "2026-10-07T02:10:59.305991Z",
+  "unfinished_backlog": 0,
+  "worker_count": 1,
+  "worker_errors": 0
+}

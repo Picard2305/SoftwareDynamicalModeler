@@ -1,0 +1,15 @@
+{
+  "accepted_total": 1305,
+  "app_version": null,
+  "clean_shutdown": true,
+  "completed_total": 1305,
+  "cpu_work_units": 0,
+  "end_time_utc": "2026-10-13T03:28:49.259223Z",
+  "row_count": 92,
+  "run_id": "queue-demo-new-profile-c-retry-001",
+  "sampling_interval_seconds": 1.0,
+  "start_time_utc": "2026-10-13T03:27:18.671093Z",
+  "unfinished_backlog": 0,
+  "worker_count": 1,
+  "worker_errors": 0
+}

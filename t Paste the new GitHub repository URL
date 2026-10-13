@@ -1,0 +1,422 @@
+ .../3f025934-f50a-47b2-a15a-206c57c10e52/plan.md   |     99 [32m+[m
+ .../3f025934-f50a-47b2-a15a-206c57c10e52/report.md |     58 [32m+[m
+ .../3f025934-f50a-47b2-a15a-206c57c10e52/spec.md   |    184 [32m+[m
+ README.md                                          |    549 [32m+[m
+ .../_compare_delayed_workload.cpython-313.pyc      |    Bin [31m0[m -> [32m18909[m bytes
+ .../_compare_delayed_workload.cpython-314.pyc      |    Bin [31m0[m -> [32m19735[m bytes
+ .../_generate_synthetic.cpython-314.pyc            |    Bin [31m0[m -> [32m7487[m bytes
+ examples/_compare_delayed_workload.py              |    292 [32m+[m
+ examples/_generate_example.py                      |     88 [32m+[m
+ examples/_generate_synthetic.py                    |    112 [32m+[m
+ examples/config.json                               |     96 [32m+[m
+ .../synthetic_boundaries.json                      |     14 [32m+[m
+ .../independent_seed_31415/synthetic_config.json   |    103 [32m+[m
+ .../independent_seed_31415/synthetic_holdout.csv   |    151 [32m+[m
+ .../independent_seed_31415/synthetic_train.csv     |    451 [32m+[m
+ examples/models.json                               |     53 [32m+[m
+ examples/synthetic_boundaries.json                 |     14 [32m+[m
+ examples/synthetic_config.json                     |    103 [32m+[m
+ examples/synthetic_holdout.csv                     |    151 [32m+[m
+ examples/synthetic_train.csv                       |    451 [32m+[m
+ examples/telemetry.csv                             |     61 [32m+[m
+ experiments/queueing_demo/README.md                |     72 [32m+[m
+ experiments/queueing_demo/__main__.py              |     76 [32m+[m
+ .../__pycache__/__main__.cpython-313.pyc           |    Bin [31m0[m -> [32m4120[m bytes
+ .../__pycache__/__main__.cpython-314.pyc           |    Bin [31m0[m -> [32m4137[m bytes
+ .../queueing_demo/__pycache__/app.cpython-313.pyc  |    Bin [31m0[m -> [32m22711[m bytes
+ .../queueing_demo/__pycache__/app.cpython-314.pyc  |    Bin [31m0[m -> [32m23786[m bytes
+ .../__pycache__/k6_runner.cpython-314.pyc          |    Bin [31m0[m -> [32m3805[m bytes
+ .../__pycache__/telemetry.cpython-313.pyc          |    Bin [31m0[m -> [32m4404[m bytes
+ .../__pycache__/telemetry.cpython-314.pyc          |    Bin [31m0[m -> [32m4644[m bytes
+ experiments/queueing_demo/app.py                   |    401 [32m+[m
+ experiments/queueing_demo/k6_runner.py             |     78 [32m+[m
+ experiments/queueing_demo/load.js                  |    148 [32m+[m
+ experiments/queueing_demo/telemetry.py             |     82 [32m+[m
+ ise_robustness_threshold.png                       |    Bin [31m0[m -> [32m57739[m bytes
+ paper-refs.bib                                     |     29 [32m+[m
+ paper.bib                                          |     37 [32m+[m
+ paper.md                                           |     61 [32m+[m
+ paper.tex                                          |    183 [32m+[m
+ plan.md                                            |     50 [32m+[m
+ pyproject.toml                                     |      2 [32m+[m
+ .../app/jobs.csv                                   |   2402 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  38674 [32m+++++++[m
+ .../listener-probes.json                           |   2712 [32m+[m
+ .../app/jobs.csv                                   |   2401 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  38658 [32m+++++++[m
+ .../listener-probes.json                           |   2707 [32m+[m
+ .../app/jobs.csv                                   |   2402 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  38674 [32m+++++++[m
+ .../listener-probes.json                           |   2722 [32m+[m
+ .../app/jobs.csv                                   |   2399 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  38675 [32m+++++++[m
+ .../listener-probes.json                           |   2647 [32m+[m
+ .../app/jobs.csv                                   |   2387 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    126 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  38659 [32m+++++++[m
+ .../listener-probes.json                           |   2517 [32m+[m
+ .../app/jobs.csv                                   |   2343 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    127 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  38675 [32m+++++++[m
+ .../listener-probes.json                           |   2642 [32m+[m
+ runs/queue-demo-local-001/app/jobs.csv             |      7 [32m+[m
+ runs/queue-demo-local-001/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-001/app/telemetry.csv        |    372 [32m+[m
+ runs/queue-demo-local-001/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-001/k6/metrics.json          |    131 [32m+[m
+ runs/queue-demo-local-002/app/jobs.csv             |      7 [32m+[m
+ runs/queue-demo-local-002/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-002/app/telemetry.csv        |    127 [32m+[m
+ runs/queue-demo-local-002/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-002/k6/metrics.json          |    131 [32m+[m
+ runs/queue-demo-local-003/app/jobs.csv             |   4958 [32m+[m
+ runs/queue-demo-local-003/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-003/app/telemetry.csv        |    289 [32m+[m
+ runs/queue-demo-local-003/k6/k6-summary.json       |     59 [32m+[m
+ runs/queue-demo-local-003/k6/metrics.json          |  87251 [32m+++++++++++++++[m
+ runs/queue-demo-local-004/app/jobs.csv             |   5406 [32m+[m
+ runs/queue-demo-local-004/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-004/app/telemetry.csv        |    227 [32m+[m
+ runs/queue-demo-local-004/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-004/k6/metrics.json          | 102277 [32m++++++++++++++++++[m
+ runs/queue-demo-local-005/app/jobs.csv             |   5434 [32m+[m
+ runs/queue-demo-local-005/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-005/app/telemetry.csv        |    515 [32m+[m
+ runs/queue-demo-local-005/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-005/k6/metrics.json          | 102260 [32m+++++++++++++++++[m
+ runs/queue-demo-local-006/app/jobs.csv             |   4482 [32m+[m
+ runs/queue-demo-local-006/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-006/app/telemetry.csv        |    162 [32m+[m
+ runs/queue-demo-local-006/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-006/k6/metrics.json          |  81860 [32m++++++++++++++[m
+ runs/queue-demo-local-007/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-007/k6/metrics.json          |  71659 [32m++++++++++++[m
+ runs/queue-demo-local-008/app/jobs.csv             |   4196 [32m+[m
+ runs/queue-demo-local-008/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-008/app/telemetry.csv        |    269 [32m+[m
+ runs/queue-demo-local-008/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-008/k6/metrics.json          |  71677 [32m++++++++++++[m
+ runs/queue-demo-local-009/app/jobs.csv             |   3990 [32m+[m
+ runs/queue-demo-local-009/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-009/app/telemetry.csv        |   1142 [32m+[m
+ runs/queue-demo-local-009/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-009/k6/metrics.json          |  71660 [32m++++++++++++[m
+ runs/queue-demo-local-010/app/jobs.csv             |   4201 [32m+[m
+ runs/queue-demo-local-010/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-010/app/telemetry.csv        |    256 [32m+[m
+ runs/queue-demo-local-010/k6/k6-console.log        |    Bin [31m0[m -> [32m34644[m bytes
+ runs/queue-demo-local-010/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-010/k6/metrics.json          |  71659 [32m++++++++++++[m
+ runs/queue-demo-local-011/app/jobs.csv             |   3906 [32m+[m
+ runs/queue-demo-local-011/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-011/app/telemetry.csv        |    190 [32m+[m
+ runs/queue-demo-local-011/k6/k6-console.log        |    Bin [31m0[m -> [32m173872[m bytes
+ runs/queue-demo-local-011/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-011/k6/metrics.json          |  71677 [32m++++++++++++[m
+ runs/queue-demo-local-012/app-console.log          |    Bin [31m0[m -> [32m236[m bytes
+ runs/queue-demo-local-012/app/telemetry.csv        |    336 [32m+[m
+ runs/queue-demo-local-012/k6/k6-console.log        |    Bin [31m0[m -> [32m34644[m bytes
+ runs/queue-demo-local-012/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-012/k6/metrics.json          |  71659 [32m++++++++++++[m
+ runs/queue-demo-local-012/listener.csv             |    260 [32m+[m
+ runs/queue-demo-local-013/app/jobs.csv             |   4199 [32m+[m
+ runs/queue-demo-local-013/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-local-013/app/telemetry.csv        |    675 [32m+[m
+ runs/queue-demo-local-013/k6/k6-console.log        |    Bin [31m0[m -> [32m36990[m bytes
+ runs/queue-demo-local-013/k6/k6-summary.json       |     35 [32m+[m
+ runs/queue-demo-local-013/k6/load-35.js            |    143 [32m+[m
+ runs/queue-demo-local-013/k6/metrics.json          |  71677 [32m++++++++++++[m
+ runs/queue-demo-local-013/listener.csv             |    694 [32m+[m
+ runs/queue-demo-new-profile-a-rep-001/app/jobs.csv |   1137 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     36 [32m+[m
+ .../k6/k6-summary.json                             |     48 [32m+[m
+ .../k6/metrics.json                                |  18439 [32m++++[m
+ .../listener-probes.json                           |   2133 [32m+[m
+ .../queue-summary.json                             |     14 [32m+[m
+ runs/queue-demo-new-profile-a-rep-002/app/jobs.csv |   1141 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     36 [32m+[m
+ .../k6/k6-summary.json                             |     48 [32m+[m
+ .../k6/metrics.json                                |  18438 [32m++++[m
+ .../listener-probes.json                           |   2112 [32m+[m
+ .../queue-summary.json                             |     14 [32m+[m
+ runs/queue-demo-new-profile-a-rep-003/app/jobs.csv |   1141 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     36 [32m+[m
+ .../k6/k6-summary.json                             |     48 [32m+[m
+ .../k6/metrics.json                                |  18436 [32m++++[m
+ .../listener-probes.json                           |   2087 [32m+[m
+ .../queue-summary.json                             |     14 [32m+[m
+ .../app/jobs.csv                                   |   1141 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     36 [32m+[m
+ .../k6/k6-summary.json                             |     48 [32m+[m
+ .../k6/metrics.json                                |  18438 [32m++++[m
+ .../listener-probes.json                           |   2107 [32m+[m
+ .../queue-summary.json                             |     14 [32m+[m
+ runs/queue-demo-new-profile-b-rep-001/app/jobs.csv |   1381 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     44 [32m+[m
+ .../k6/k6-summary.json                             |     56 [32m+[m
+ .../k6/metrics.json                                |  22278 [32m++++[m
+ .../listener-probes.json                           |   2117 [32m+[m
+ .../queue-summary.json                             |     15 [32m+[m
+ runs/queue-demo-new-profile-b-rep-002/app/jobs.csv |   1381 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     44 [32m+[m
+ .../k6/k6-summary.json                             |     56 [32m+[m
+ .../k6/metrics.json                                |  22276 [32m++++[m
+ .../listener-probes.json                           |   2102 [32m+[m
+ .../queue-summary.json                             |     15 [32m+[m
+ runs/queue-demo-new-profile-b-rep-003/app/jobs.csv |   1380 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     44 [32m+[m
+ .../k6/k6-summary.json                             |     56 [32m+[m
+ .../k6/metrics.json                                |  22279 [32m++++[m
+ .../listener-probes.json                           |   2117 [32m+[m
+ .../queue-summary.json                             |     15 [32m+[m
+ .../app/jobs.csv                                   |   1381 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     44 [32m+[m
+ .../k6/k6-summary.json                             |     56 [32m+[m
+ .../k6/metrics.json                                |  22278 [32m++++[m
+ .../listener-probes.json                           |   2097 [32m+[m
+ .../queue-summary.json                             |     15 [32m+[m
+ runs/queue-demo-new-profile-c-rep-001/app/jobs.csv |   1306 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     52 [32m+[m
+ .../k6/k6-summary.json                             |     64 [32m+[m
+ .../k6/metrics.json                                |  21078 [32m++++[m
+ .../listener-probes.json                           |   2087 [32m+[m
+ .../queue-summary.json                             |     16 [32m+[m
+ runs/queue-demo-new-profile-c-rep-002/app/jobs.csv |   1305 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     94 [32m+[m
+ .../experiment_config.json                         |     52 [32m+[m
+ .../k6/k6-summary.json                             |     64 [32m+[m
+ .../k6/metrics.json                                |  21095 [32m++++[m
+ .../listener-probes.json                           |   2123 [32m+[m
+ .../queue-summary.json                             |     16 [32m+[m
+ runs/queue-demo-new-profile-c-rep-003/app/jobs.csv |   1306 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     52 [32m+[m
+ .../k6/k6-summary.json                             |     64 [32m+[m
+ .../k6/metrics.json                                |  21078 [32m++++[m
+ .../listener-probes.json                           |   2137 [32m+[m
+ .../queue-summary.json                             |     16 [32m+[m
+ .../app/jobs.csv                                   |   1306 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     52 [32m+[m
+ .../k6/k6-summary.json                             |     64 [32m+[m
+ .../k6/metrics.json                                |  21078 [32m++++[m
+ .../listener-probes.json                           |   2112 [32m+[m
+ .../queue-summary.json                             |     16 [32m+[m
+ runs/queue-demo-pilot-001/app/jobs.csv             |   4193 [32m+[m
+ runs/queue-demo-pilot-001/app/run_metadata.json    |     15 [32m+[m
+ runs/queue-demo-pilot-001/app/telemetry.csv        |    246 [32m+[m
+ runs/queue-demo-pilot-001/k6/k6-summary.json       |     59 [32m+[m
+ runs/queue-demo-pilot-001/k6/metrics.json          |  87287 [32m+++++++++++++++[m
+ .../queue-demo-rate-20-diagnostic-001/app/jobs.csv |   1201 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     63 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  19338 [32m++++[m
+ .../listener-probes.json                           |   1402 [32m+[m
+ runs/queue-demo-rate-20-replicate-001/app/jobs.csv |   2401 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  38658 [32m+++++++[m
+ .../listener-probes.json                           |   2682 [32m+[m
+ runs/queue-demo-rate-20-replicate-002/app/jobs.csv |   2402 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  38674 [32m+++++++[m
+ .../listener-probes.json                           |   2707 [32m+[m
+ runs/queue-demo-rate-20-replicate-003/app/jobs.csv |   2402 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  38674 [32m+++++++[m
+ .../listener-probes.json                           |   2727 [32m+[m
+ runs/queue-demo-rate-25-001/app/jobs.csv           |   1501 [32m+[m
+ runs/queue-demo-rate-25-001/app/run_metadata.json  |     15 [32m+[m
+ runs/queue-demo-rate-25-001/app/telemetry.csv      |     63 [32m+[m
+ runs/queue-demo-rate-25-001/k6/k6-summary.json     |     24 [32m+[m
+ runs/queue-demo-rate-25-001/k6/metrics.json        |  24138 [32m+++++[m
+ runs/queue-demo-rate-25-replicate-001/app/jobs.csv |   3001 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  48258 [32m+++++++++[m
+ .../listener-probes.json                           |   2777 [32m+[m
+ runs/queue-demo-rate-25-replicate-002/app/jobs.csv |   3000 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  48259 [32m+++++++++[m
+ .../listener-probes.json                           |   2768 [32m+[m
+ runs/queue-demo-rate-25-replicate-003/app/jobs.csv |   3002 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  48274 [32m+++++++++[m
+ .../listener-probes.json                           |   2752 [32m+[m
+ runs/queue-demo-rate-30-001/app/jobs.csv           |   1800 [32m+[m
+ runs/queue-demo-rate-30-001/app/run_metadata.json  |     15 [32m+[m
+ runs/queue-demo-rate-30-001/app/telemetry.csv      |     63 [32m+[m
+ runs/queue-demo-rate-30-001/k6/k6-summary.json     |     24 [32m+[m
+ runs/queue-demo-rate-30-001/k6/metrics.json        |  28955 [32m+++++[m
+ .../queue-demo-rate-30-diagnostic-001/app/jobs.csv |   1802 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     63 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  28954 [32m+++++[m
+ .../listener-probes.json                           |   1372 [32m+[m
+ runs/queue-demo-rate-30-replicate-001/app/jobs.csv |   3601 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    125 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  57875 [32m++++++++++[m
+ .../listener-probes.json                           |   2807 [32m+[m
+ runs/queue-demo-rate-30-replicate-002/app/jobs.csv |   3596 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  57875 [32m++++++++++[m
+ .../listener-probes.json                           |   2738 [32m+[m
+ runs/queue-demo-rate-30-replicate-003/app/jobs.csv |   3601 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |    123 [32m+[m
+ .../k6/k6-summary.json                             |     24 [32m+[m
+ .../k6/metrics.json                                |  57858 [32m++++++++++[m
+ .../listener-probes.json                           |   2752 [32m+[m
+ .../queue-demo-rate-20/app/jobs.csv                |   1195 [32m+[m
+ .../queue-demo-rate-20/app/run_metadata.json       |     15 [32m+[m
+ .../queue-demo-rate-20/app/telemetry.csv           |     63 [32m+[m
+ .../queue-demo-rate-20/k6/k6-summary.json          |     24 [32m+[m
+ .../queue-demo-rate-20/k6/metrics.json             |  19355 [32m++++[m
+ .../app/jobs.csv                                   |   1203 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     29 [32m+[m
+ .../k6/k6-summary.json                             |     42 [32m+[m
+ .../k6/metrics.json                                |  19430 [32m++++[m
+ .../listener-probes.json                           |   2142 [32m+[m
+ .../queue-summary.json                             |      9 [32m+[m
+ .../app/jobs.csv                                   |   1201 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     32 [32m+[m
+ .../k6/k6-summary.json                             |     45 [32m+[m
+ .../k6/metrics.json                                |  19398 [32m++++[m
+ .../listener-probes.json                           |   2157 [32m+[m
+ .../queue-summary.json                             |     14 [32m+[m
+ .../app/jobs.csv                                   |   1201 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     32 [32m+[m
+ .../k6/k6-summary.json                             |     45 [32m+[m
+ .../k6/metrics.json                                |  19398 [32m++++[m
+ .../listener-probes.json                           |   2152 [32m+[m
+ .../queue-summary.json                             |     14 [32m+[m
+ .../app/jobs.csv                                   |   1201 [32m+[m
+ .../app/run_metadata.json                          |     15 [32m+[m
+ .../app/telemetry.csv                              |     93 [32m+[m
+ .../experiment_config.json                         |     32 [32m+[m
+ .../k6/k6-summary.json                             |     45 [32m+[m
+ .../k6/metrics.json                                |  19396 [32m++++[m
+ .../listener-probes.json                           |   2137 [32m+[m
+ .../queue-summary.json                             |     14 [32m+[m
+ runs/queue-new-arrival-profile-study-001.json      |    905 [32m+[m
+ .../queue-new-arrival-profile-study-002-errors.png |    Bin [31m0[m -> [32m141477[m bytes
+ runs/queue-new-arrival-profile-study-002-peaks.png |    Bin [31m0[m -> [32m88291[m bytes
+ runs/queue-new-arrival-profile-study-002.json      |   1372 [32m+[m
+ ...eler-hybrid-reflected-loro-exploratory-001.json |    424 [32m+[m
+ runs/queue-sdmodeler-loro-exploratory-001.json     |    354 [32m+[m
+ sdmodeler                                          |      1 [32m+[m
+ sindy-aws-telemetry-spec.md                        |     84 [32m+[m
+ .../test_cli.cpython-313-pytest-8.4.1.pyc          |    Bin [31m0[m -> [32m8481[m bytes
+ .../test_cli.cpython-314-pytest-9.0.2.pyc          |    Bin [31m0[m -> [32m35063[m bytes
+ .../test_config.cpython-313-pytest-8.4.1.pyc       |    Bin [31m0[m -> [32m9727[m bytes
+ .../test_config.cpython-314-pytest-9.0.2.pyc       |    Bin [31m0[m -> [32m10750[m bytes
+ ...orkload_experiment.cpython-313-pytest-8.4.1.pyc |    Bin [31m0[m -> [32m19041[m bytes
+ ...orkload_experiment.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m19998[m bytes
+ ...st_differentiation.cpython-313-pytest-8.4.1.pyc |    Bin [31m0[m -> [32m9434[m bytes
+ ...st_differentiation.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m9791[m bytes
+ ...st_feature_library.cpython-313-pytest-8.4.1.pyc |    Bin [31m0[m -> [32m15334[m bytes
+ ...st_feature_library.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m20946[m bytes
+ .../test_fitting.cpython-313-pytest-8.4.1.pyc      |    Bin [31m0[m -> [32m16821[m bytes
+ .../test_fitting.cpython-314-pytest-9.0.2.pyc      |    Bin [31m0[m -> [32m32415[m bytes
+ .../test_ingestion.cpython-313-pytest-8.4.1.pyc    |    Bin [31m0[m -> [32m15580[m bytes
+ .../test_ingestion.cpython-314-pytest-9.0.2.pyc    |    Bin [31m0[m -> [32m25354[m bytes
+ ...est_mode_switching.cpython-313-pytest-8.4.1.pyc |    Bin [31m0[m -> [32m11479[m bytes
+ ...est_mode_switching.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m11898[m bytes
+ .../test_optimizer.cpython-313-pytest-8.4.1.pyc    |    Bin [31m0[m -> [32m7179[m bytes
+ .../test_optimizer.cpython-314-pytest-9.0.2.pyc    |    Bin [31m0[m -> [32m7456[m bytes
+ ...t_plant_controller.cpython-313-pytest-8.4.1.pyc |    Bin [31m0[m -> [32m10393[m bytes
+ ...t_plant_controller.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m9771[m bytes
+ ..._queueing_demo_app.cpython-313-pytest-8.4.1.pyc |    Bin [31m0[m -> [32m24889[m bytes
+ ..._queueing_demo_app.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m25886[m bytes
+ ..._queueing_demo_cli.cpython-313-pytest-8.4.1.pyc |    Bin [31m0[m -> [32m7178[m bytes
+ ..._queueing_demo_cli.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m7412[m bytes
+ ...t_queueing_demo_k6.cpython-313-pytest-8.4.1.pyc |    Bin [31m0[m -> [32m12722[m bytes
+ ...t_queueing_demo_k6.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m43944[m bytes
+ ...ing_demo_telemetry.cpython-313-pytest-8.4.1.pyc |    Bin [31m0[m -> [32m30090[m bytes
+ ...ing_demo_telemetry.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m32274[m bytes
+ .../test_reporting.cpython-313-pytest-8.4.1.pyc    |    Bin [31m0[m -> [32m20880[m bytes
+ .../test_reporting.cpython-314-pytest-9.0.2.pyc    |    Bin [31m0[m -> [32m32723[m bytes
+ .../test_segmentation.cpython-313-pytest-8.4.1.pyc |    Bin [31m0[m -> [32m15349[m bytes
+ .../test_segmentation.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m15957[m bytes
+ ..._synthetic_example.cpython-314-pytest-9.0.2.pyc |    Bin [31m0[m -> [32m26522[m bytes
+ .../test_synthetic_example.cpython-314.pyc         |    Bin [31m0[m -> [32m7296[m bytes
+ .../test_validation.cpython-313-pytest-8.4.1.pyc   |    Bin [31m0[m -> [32m21098[m bytes
+ .../test_validation.cpython-314-pytest-9.0.2.pyc   |    Bin [31m0[m -> [32m22171[m bytes
+ tests/test_cli.py                                  |    251 [32m+[m
+ tests/test_config.py                               |    109 [32m+[m
+ tests/test_delayed_workload_experiment.py          |    118 [32m+[m
+ tests/test_differentiation.py                      |     48 [32m+[m
+ tests/test_feature_library.py                      |    161 [32m+[m
+ tests/test_fitting.py                              |    204 [32m+[m
+ tests/test_ingestion.py                            |    198 [32m+[m
+ tests/test_mode_switching.py                       |     75 [32m+[m
+ tests/test_optimizer.py                            |     50 [32m+[m
+ tests/test_plant_controller.py                     |     79 [32m+[m
+ tests/test_queueing_demo_app.py                    |    226 [32m+[m
+ tests/test_queueing_demo_cli.py                    |     39 [32m+[m
+ tests/test_queueing_demo_k6.py                     |    274 [32m+[m
+ tests/test_queueing_demo_telemetry.py              |    180 [32m+[m
+ tests/test_reporting.py                            |    251 [32m+[m
+ tests/test_segmentation.py                         |    117 [32m+[m
+ tests/test_synthetic_example.py                    |     95 [32m+[m
+ tests/test_validation.py                           |    175 [32m+[m
+ 421 files changed, 2289189 insertions(+)

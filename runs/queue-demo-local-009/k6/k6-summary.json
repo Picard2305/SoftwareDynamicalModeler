@@ -1,0 +1,35 @@
+{
+  "run_id": "queue-demo-local-009",
+  "job_type": "cpu",
+  "k6_version": "k6.exe v2.2.0 (commit/00a9a1b7f5, go1.26.5, windows/amd64)",
+  "smoke_mode": false,
+  "schedule": [
+    {
+      "name": "step_35",
+      "startTime": "0s",
+      "duration": "120s",
+      "rate": 35,
+      "preAllocatedVUs": 75,
+      "maxVUs": 150
+    }
+  ],
+  "offered_load_complete": true,
+  "iterations_completed": 4200,
+  "requests_completed": 4200,
+  "request_attempts_started": 4200,
+  "request_attempts_completed": 4200,
+  "dropped_iterations": 0,
+  "outcomes": {
+    "accepted": 3989,
+    "non_accepted_responses": 0,
+    "transport_errors": 211,
+    "http_failure_rate": 0.05023809523809524
+  },
+  "latency_ms": {
+    "count": 4200,
+    "mean": 37.99764990476177,
+    "median": 16.65195,
+    "p95": 144.6686049999998,
+    "max": 1989.8321
+  }
+}

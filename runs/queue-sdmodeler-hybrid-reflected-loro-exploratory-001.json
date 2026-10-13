@@ -1,0 +1,424 @@
+{
+  "aggregate": {
+    "persistence": {
+      "absolute_peak_error": {
+        "max": 64.0,
+        "mean": 63.0,
+        "min": 62.0
+      },
+      "absolute_peak_time_error_seconds": {
+        "max": 60.0,
+        "mean": 60.0,
+        "min": 60.0
+      },
+      "mae": {
+        "max": 14.38888888888889,
+        "mean": 13.640740740740739,
+        "min": 13.055555555555555
+      },
+      "normalized_rmse": {
+        "max": 1.2235671213686208,
+        "mean": 1.2153442692404968,
+        "min": 1.2105765516397513
+      },
+      "rmse": {
+        "max": 24.970426953142436,
+        "mean": 23.99796876412492,
+        "min": 23.16486803569386
+      }
+    },
+    "reflected_queue_configured_capacity": {
+      "absolute_peak_error": {
+        "max": 9.454545454545581,
+        "mean": 8.454545454545581,
+        "min": 7.454545454545581
+      },
+      "absolute_peak_time_error_seconds": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "mae": {
+        "max": 3.3404040404040676,
+        "mean": 2.648821548821575,
+        "min": 2.1323232323232584
+      },
+      "normalized_rmse": {
+        "max": 0.34359123765528776,
+        "mean": 0.2961618469083979,
+        "min": 0.26226576236107096
+      },
+      "rmse": {
+        "max": 7.011973231198329,
+        "mean": 5.864892288175285,
+        "min": 5.018560591765688
+      }
+    },
+    "reflected_queue_train_estimated_capacity": {
+      "absolute_peak_error": {
+        "max": 7.730962964011923,
+        "mean": 4.930906610594557,
+        "min": 1.2212660007127454
+      },
+      "absolute_peak_time_error_seconds": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "mae": {
+        "max": 2.132092181291402,
+        "mean": 1.8758420910488398,
+        "min": 1.5988219533832175
+      },
+      "normalized_rmse": {
+        "max": 0.2037624526587773,
+        "mean": 0.17855661840707623,
+        "min": 0.15837570563567271
+      },
+      "rmse": {
+        "max": 3.8990762873082074,
+        "mean": 3.519484902237655,
+        "min": 3.1179621076309334
+      }
+    },
+    "sdmodeler_nonnegative_projection": {
+      "absolute_peak_error": {
+        "max": 13.65432784455416,
+        "mean": 11.759882951554806,
+        "min": 9.949094290404716
+      },
+      "absolute_peak_time_error_seconds": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "mae": {
+        "max": 5.290481207223507,
+        "mean": 5.064752783934387,
+        "min": 4.659636782889457
+      },
+      "normalized_rmse": {
+        "max": 0.4136839768413672,
+        "mean": 0.383202850224152,
+        "min": 0.34209640177606526
+      },
+      "rmse": {
+        "max": 7.916008879431063,
+        "mean": 7.550273199646893,
+        "min": 6.981466780446932
+      }
+    },
+    "sdmodeler_unconstrained": {
+      "absolute_peak_error": {
+        "max": 14.616532625502202,
+        "mean": 12.762315155277273,
+        "min": 10.970704175387148
+      },
+      "absolute_peak_time_error_seconds": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "mae": {
+        "max": 6.134892757495026,
+        "mean": 5.990226434786179,
+        "min": 5.723705881211739
+      },
+      "normalized_rmse": {
+        "max": 0.4057965022566337,
+        "mean": 0.38509617234385124,
+        "min": 0.35585536524376404
+      },
+      "rmse": {
+        "max": 7.765078888557909,
+        "mean": 7.592303511795102,
+        "min": 7.262258235383078
+      }
+    }
+  },
+  "configured_service_capacity_per_second": 18.181818181818183,
+  "experiment": "leave-one-run-out exploratory reflected-queue versus sparse-model test",
+  "folds": [
+    {
+      "coefficients": [
+        [
+          -0.06695718123297882,
+          -5.161671594533298,
+          0.45653242473161737
+        ]
+      ],
+      "coefficients_feature_order": [
+        "QueueDepth",
+        "1",
+        "u:ArrivalRate"
+      ],
+      "fit_derivative_rmse": 1.5066235891676243,
+      "held_out_run": "queue-demo-service-time-55ms-profile-002",
+      "mean_training_service_seconds": 0.05648020883401235,
+      "observed_peak_queue": 63.0,
+      "observed_peak_time_seconds": 60,
+      "scores": {
+        "persistence": {
+          "absolute_peak_error": 63.0,
+          "absolute_peak_time_error_seconds": 60.0,
+          "mae": 13.477777777777778,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.211889134713118,
+          "observed_recovery_empty_seconds_after_t60": 9.0,
+          "predicted_peak_queue": 0.0,
+          "predicted_recovery_empty_seconds_after_t60": 0.0,
+          "rmse": 23.858611303538463
+        },
+        "reflected_queue_configured_capacity": {
+          "absolute_peak_error": 8.454545454545581,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 2.4737373737374004,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.28262854070883503,
+          "observed_recovery_empty_seconds_after_t60": 9.0,
+          "predicted_peak_queue": 54.54545454545442,
+          "predicted_recovery_empty_seconds_after_t60": 6.0,
+          "rmse": 5.564143041561837
+        },
+        "reflected_queue_train_estimated_capacity": {
+          "absolute_peak_error": 5.840490867059003,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 1.8966121384719,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.15837570563567271,
+          "observed_recovery_empty_seconds_after_t60": 9.0,
+          "predicted_peak_queue": 68.840490867059,
+          "predicted_recovery_empty_seconds_after_t60": 8.0,
+          "rmse": 3.1179621076309334
+        },
+        "sdmodeler_nonnegative_projection": {
+          "absolute_peak_error": 11.67622671970554,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 5.244140361690196,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.3938281720550236,
+          "observed_recovery_empty_seconds_after_t60": 9.0,
+          "predicted_peak_queue": 51.32377328029446,
+          "predicted_recovery_empty_seconds_after_t60": 27.0,
+          "rmse": 7.753343939062685
+        },
+        "sdmodeler_unconstrained": {
+          "absolute_peak_error": 12.69970866494247,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 6.134892757495026,
+          "negative_prediction_count": 33,
+          "normalized_rmse": 0.39363664953115574,
+          "observed_recovery_empty_seconds_after_t60": 9.0,
+          "predicted_peak_queue": 50.30029133505753,
+          "predicted_recovery_empty_seconds_after_t60": 27.0,
+          "rmse": 7.749573411444317
+        }
+      },
+      "training_runs": [
+        "queue-demo-service-time-55ms-profile-003",
+        "queue-demo-service-time-55ms-profile-004"
+      ],
+      "training_samples": 182,
+      "training_service_capacity_per_second": 17.705316971098036
+    },
+    {
+      "coefficients": [
+        [
+          -0.06698092150692414,
+          -5.217836996554143,
+          0.4622013808492041
+        ]
+      ],
+      "coefficients_feature_order": [
+        "QueueDepth",
+        "1",
+        "u:ArrivalRate"
+      ],
+      "fit_derivative_rmse": 1.5268769900308192,
+      "held_out_run": "queue-demo-service-time-55ms-profile-003",
+      "mean_training_service_seconds": 0.05657505512237549,
+      "observed_peak_queue": 62.0,
+      "observed_peak_time_seconds": 60,
+      "scores": {
+        "persistence": {
+          "absolute_peak_error": 62.0,
+          "absolute_peak_time_error_seconds": 60.0,
+          "mae": 13.055555555555555,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.2105765516397513,
+          "observed_recovery_empty_seconds_after_t60": 8.0,
+          "predicted_peak_queue": 0.0,
+          "predicted_recovery_empty_seconds_after_t60": 0.0,
+          "rmse": 23.16486803569386
+        },
+        "reflected_queue_configured_capacity": {
+          "absolute_peak_error": 7.454545454545581,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 2.1323232323232584,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.26226576236107096,
+          "observed_recovery_empty_seconds_after_t60": 8.0,
+          "predicted_peak_queue": 54.54545454545442,
+          "predicted_recovery_empty_seconds_after_t60": 6.0,
+          "rmse": 5.018560591765688
+        },
+        "reflected_queue_train_estimated_capacity": {
+          "absolute_peak_error": 7.730962964011923,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 2.132092181291402,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.2037624526587773,
+          "observed_recovery_empty_seconds_after_t60": 8.0,
+          "predicted_peak_queue": 69.73096296401192,
+          "predicted_recovery_empty_seconds_after_t60": 9.0,
+          "rmse": 3.8990762873082074
+        },
+        "sdmodeler_nonnegative_projection": {
+          "absolute_peak_error": 9.949094290404716,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 5.290481207223507,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.4136839768413672,
+          "observed_recovery_empty_seconds_after_t60": 8.0,
+          "predicted_peak_queue": 52.050905709595284,
+          "predicted_recovery_empty_seconds_after_t60": 27.0,
+          "rmse": 7.916008879431063
+        },
+        "sdmodeler_unconstrained": {
+          "absolute_peak_error": 10.970704175387148,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 6.112080665651772,
+          "negative_prediction_count": 33,
+          "normalized_rmse": 0.4057965022566337,
+          "observed_recovery_empty_seconds_after_t60": 8.0,
+          "predicted_peak_queue": 51.02929582461285,
+          "predicted_recovery_empty_seconds_after_t60": 27.0,
+          "rmse": 7.765078888557909
+        }
+      },
+      "training_runs": [
+        "queue-demo-service-time-55ms-profile-002",
+        "queue-demo-service-time-55ms-profile-004"
+      ],
+      "training_samples": 182,
+      "training_service_capacity_per_second": 17.675634567866272
+    },
+    {
+      "coefficients": [
+        [
+          -0.06853215130083944,
+          -5.1508831170273925,
+          0.4553753560943165
+        ]
+      ],
+      "coefficients_feature_order": [
+        "QueueDepth",
+        "1",
+        "u:ArrivalRate"
+      ],
+      "fit_derivative_rmse": 1.5492046144256255,
+      "held_out_run": "queue-demo-service-time-55ms-profile-004",
+      "mean_training_service_seconds": 0.05609796742598216,
+      "observed_peak_queue": 64.0,
+      "observed_peak_time_seconds": 60,
+      "scores": {
+        "persistence": {
+          "absolute_peak_error": 64.0,
+          "absolute_peak_time_error_seconds": 60.0,
+          "mae": 14.38888888888889,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.2235671213686208,
+          "observed_recovery_empty_seconds_after_t60": 10.0,
+          "predicted_peak_queue": 0.0,
+          "predicted_recovery_empty_seconds_after_t60": 0.0,
+          "rmse": 24.970426953142436
+        },
+        "reflected_queue_configured_capacity": {
+          "absolute_peak_error": 9.454545454545581,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 3.3404040404040676,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.34359123765528776,
+          "observed_recovery_empty_seconds_after_t60": 10.0,
+          "predicted_peak_queue": 54.54545454545442,
+          "predicted_recovery_empty_seconds_after_t60": 6.0,
+          "rmse": 7.011973231198329
+        },
+        "reflected_queue_train_estimated_capacity": {
+          "absolute_peak_error": 1.2212660007127454,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 1.5988219533832175,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.17353169692677864,
+          "observed_recovery_empty_seconds_after_t60": 10.0,
+          "predicted_peak_queue": 65.22126600071275,
+          "predicted_recovery_empty_seconds_after_t60": 8.0,
+          "rmse": 3.5414163117738253
+        },
+        "sdmodeler_nonnegative_projection": {
+          "absolute_peak_error": 13.65432784455416,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 4.659636782889457,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.34209640177606526,
+          "observed_recovery_empty_seconds_after_t60": 10.0,
+          "predicted_peak_queue": 50.34567215544584,
+          "predicted_recovery_empty_seconds_after_t60": 27.0,
+          "rmse": 6.981466780446932
+        },
+        "sdmodeler_unconstrained": {
+          "absolute_peak_error": 14.616532625502202,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 5.723705881211739,
+          "negative_prediction_count": 34,
+          "normalized_rmse": 0.35585536524376404,
+          "observed_recovery_empty_seconds_after_t60": 10.0,
+          "predicted_peak_queue": 49.3834673744978,
+          "predicted_recovery_empty_seconds_after_t60": 26.0,
+          "rmse": 7.262258235383078
+        }
+      },
+      "training_runs": [
+        "queue-demo-service-time-55ms-profile-002",
+        "queue-demo-service-time-55ms-profile-003"
+      ],
+      "training_samples": 182,
+      "training_service_capacity_per_second": 17.825957799976244
+    }
+  ],
+  "input": "scheduled arrival rate only; no held-out completion observations used as forecast inputs",
+  "reflected_model": {
+    "equation": "Q[k] = max(0, Q[k-1] + arrival_rate[k] - training_only_service_capacity)",
+    "service_capacity_estimator": "inverse mean service time inferred from training-run FIFO event times only"
+  },
+  "resampling_interval_seconds": 1,
+  "schedule": [
+    {
+      "arrival_rate_per_second": 10,
+      "end_seconds": 30,
+      "start_seconds": 0
+    },
+    {
+      "arrival_rate_per_second": 20,
+      "end_seconds": 60,
+      "start_seconds": 30
+    },
+    {
+      "arrival_rate_per_second": 10,
+      "end_seconds": 90,
+      "start_seconds": 60
+    }
+  ],
+  "sdmodeler_method": {
+    "differentiation": "Savitzky-Golay window 7, polynomial order 2",
+    "feature_order": [
+      "QueueDepth",
+      "1",
+      "u:ArrivalRate"
+    ],
+    "optimizer": "STLSQ",
+    "sparsity_threshold": 0.001,
+    "training_selection": "fixed before evaluating held-out runs"
+  },
+  "state": "waiting_depth reconstructed from accepted/completed event times under one-worker FIFO"
+}

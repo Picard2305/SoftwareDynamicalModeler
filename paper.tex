@@ -1,0 +1,183 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+\title{Interpretable Identification of Software-System Dynamics from Telemetry:\\
+ A Configurable SINDy-with-Control Workflow}
+\author{[Author name(s)]\\Institution(s)\\\texttt{[Contact email]}}
+\date{[Submission date]}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Software telemetry records how services behave, but individual time-series metrics do not directly describe the dynamics that connect workload, capacity, and system state. We present SoftwareDynamicalModeler, a configurable Python workflow for fitting sparse, interpretable dynamical models to multivariate software telemetry. The workflow separates state variables from exogenous inputs, aligns data with role-aware resampling, segments observations at deployment and operating-regime boundaries, and fits sparse candidate equations using a configurable feature library, derivative estimator, and optimizer. Candidate equations are evaluated by numerical forward simulation, and model artifacts preserve the configuration and segment metadata needed for inspection and export. We demonstrate the implementation on a reproducible synthetic workload with a known three-sample workload delay. In this experiment, a delayed autoregressive model was selected from three candidate families and achieved a normalized root-mean-square error of 0.044 and a CPU mean absolute error of 0.282 percentage points on a reserved synthetic episode. This demonstration is deliberately limited: it is generated data, not production AWS telemetry, and the selected baseline is not itself a SINDy model. The project provides an extensible identification workflow and a controlled synthetic demonstration; evaluation on documented production telemetry remains future work.
+\end{abstract}
+
+\noindent\textbf{Keywords:} software telemetry; system identification; sparse regression; SINDy with control; dynamical systems; synthetic benchmark
+
+\section{Introduction}
+
+Distributed software systems produce time series for CPU utilization, memory, latency, request volume, queue depth, and operational controls such as replica count. Monitoring systems make these quantities visible, but a collection of metrics alone does not provide a compact account of how system state responds to changing workload or capacity. A dynamical model can make those relationships explicit and enable simulation of candidate operating conditions.
+
+Sparse Identification of Nonlinear Dynamics (SINDy) estimates governing equations by selecting a small subset of candidate functions that explain observed state derivatives \cite{brunton2016sindy}. Its controlled variant, SINDYc, includes known inputs alongside state variables \cite{brunton2016sindyc}. This distinction is useful for software systems: instance count and feature-flag state are generally imposed inputs, while quantities such as CPU or latency are candidate states. Yet telemetry introduces practical complications: measurements have different sampling behavior, deployments can change a service, operation may span distinct regimes, and derivative fit alone does not guarantee a useful forward simulation.
+
+This paper describes SoftwareDynamicalModeler, a configurable workflow that brings those concerns into a single batch identification pipeline. Its contributions are: (1) role-aware telemetry preparation and segmentation; (2) sparse model fitting with configurable feature, differentiation, and optimizer choices; (3) forward simulation as a model diagnostic; and (4) equation reports, cross-deployment coefficient comparisons, and serialized model outputs. We also describe a reproducible synthetic delayed-workload experiment included with the code.
+
+The evaluation is a software demonstration, not a production case study. The bundled experiment uses generated one-minute CPU, instance-count, and request-rate traces. Its held-out episode supports a controlled prediction comparison, but it does not establish performance on a real service or across a population of systems.
+
+\section{Background and formulation}
+
+Let $x(t)\in\mathbb{R}^{n_x}$ denote the state and $u(t)\in\mathbb{R}^{n_u}$ denote external or controlled inputs. We seek a model
+\begin{equation}
+  \dot{x}(t) = f(x(t),u(t)),
+  \label{eq:controlled-ode}
+\end{equation}
+where $f$ is represented as a sparse combination of candidate features. Given sampled observations, a numerical differentiation method estimates $\dot{x}$, and a feature matrix $\Theta(x,u)$ is formed. The regression problem for coefficient matrix $\Xi$ is
+\begin{equation}
+  \dot{X} \approx \Theta(X,U)\,\Xi^{\mathsf T}.
+  \label{eq:sparse-regression}
+\end{equation}
+Most entries of $\Xi$ are encouraged to be zero, yielding a compact equation that can be inspected term by term. SoftwareDynamicalModeler implements this formulation through PySINDy optimizers and feature construction utilities; PySINDy provides a reusable Python implementation of sparse dynamical system identification \cite{desilva2020pysindy}.
+
+The choice of $x$ and $u$ is a modeling assumption, not a causal guarantee. If an input is itself affected by system state, treating it as exogenous can obscure feedback. For example, client retries may make request rate respond to latency. The variable split is therefore explicit and configurable, and the resulting model should be interpreted in light of the system and data-collection process.
+
+\section{Software design}
+
+\subsection{End-to-end workflow}
+
+The batch workflow follows these stages:
+\begin{enumerate}
+  \item Load a canonical time-indexed data frame from CSV or fetch supported CloudWatch metrics.
+  \item Align metrics to a uniform UTC grid. Configured control variables use zero-order hold; continuous state variables may use time interpolation. Missing values are handled by the configured strategy, and simple unit conversions can be applied.
+  \item Assign deployment identifiers from timestamped boundaries, label operating regimes using a time-of-day rule, and split the series into contiguous windows.
+  \item Optionally partition each window into threshold-defined modes, such as CPU above or below a known operational threshold.
+  \item Construct candidate features, check the regression design matrix's condition number, estimate state derivatives, and fit one model for every configured sparsity threshold.
+  \item Integrate each applicable candidate forward using the observed control trajectory, compute the configured trajectory score, and attach reliability metadata.
+  \item Render equations and diagnostics, compare compatible models across deployments, or export the model set as JSON.
+\end{enumerate}
+
+Short or low-dynamic-range segments can be marked as unsuitable for fitting. Deployment boundaries are hard split points by default. Regime labeling and mode thresholds are supplied through configuration; automatic changepoint detection and automatic threshold discovery are not part of the implemented workflow.
+
+\subsection{Ingestion and variable roles}
+
+Each configured signal has a name, unit, role, and resampling rule. State variables are differentiated; control variables are not. The schema enforces zero-order hold for controls, including instance count, and prevents several event-like fields from being configured as states. The ingestion layer contains CloudWatch metric retrieval and CSV input pathways. Although the configuration schema includes non-AWS source metadata, the present non-AWS fetcher is a CSV source; a general application-log or APM connector is not claimed here.
+
+The canonical frame is indexed by a uniform UTC timestamp grid and includes configured variables plus a regime-label field for later segmentation. The default missing-data policy records gap indicators, forward-fills controls, and fills state gaps. Unit conversion supports a small explicit set of conversions. These operations make assumptions about the data and should be reported with each application.
+
+\subsection{Segmentation and switching modes}
+
+The segmenter creates contiguous windows based on deployment identity and regime label. The implemented v1 regime rule classifies samples by configured UTC business-hours bounds. Each segment stores its deployment identifier, regime, temporal bounds, sample count, dynamic-range summary, and a quality flag. A separate mode-splitting stage can partition a segment by configured threshold predicates. Fitting a separate model for each mode provides a direct representation of piecewise behavior without requiring a single regression to infer an operational switching threshold.
+
+\subsection{Feature construction and sparse estimation}
+
+The feature library has three configurable tiers. Tier 1 contains linear state terms and user-specified domain expressions. Tier 2 adds squared state terms and pairwise state interactions. Tier 3 contains sine and cosine terms for configured daily or weekly periods and is fit separately from the fast-timescale tiers. The Fourier tier represents time dependence and is not integrated by the state-feedback forward simulator.
+
+Before regression, the condition number of the design matrix, including control columns, is compared with a configured threshold. A large value produces a warning because collinearity can make coefficient attribution unstable. The condition check reports a diagnostic; it does not by itself resolve identifiability.
+
+Derivatives may be estimated using finite differences, Savitzky--Golay filtering, smoothing splines, or total-variation regularization. The default is Savitzky--Golay with an 11-sample window and polynomial order 3. The optimizer is configurable among sequentially thresholded least squares (STLSQ), SR3, and an elastic-net wrapper. A run fits one candidate per configured threshold and reports derivative-fit diagnostics, including $R^2$ and sparsity. Threshold selection is intentionally downstream of fitting.
+
+\subsection{Forward-simulation diagnostics}
+
+For an applicable candidate, the simulator initializes the state from the first sample of a trailing window and integrates the learned equations with fourth-order Runge--Kutta (RK4). At each integration step, the input is held at the observed zero-order-hold control value. The default normalized RMSE is
+\begin{equation}
+  E_{\mathrm{NRMSE}} = \sqrt{\operatorname{mean}_{i,j}
+  \left(\frac{x_{ij}^{\mathrm{obs}}-x_{ij}^{\mathrm{sim}}}{s_j}\right)^2},
+  \qquad s_j=\operatorname{std}(x_{\cdot j}^{\mathrm{obs}}),
+  \label{eq:nrmse}
+\end{equation}
+computed over forecast samples after the initialization point. Variables with near-zero scale use a unit scale. Under this metric, smaller values are better; the default acceptance rule marks a candidate reliable when its score is at most 0.2. An alternative trajectory-divergence-time metric is also available and has the opposite direction: larger values indicate longer time before a relative-error threshold is crossed.
+
+In the general fitting workflow, the model is fit on its full segment/mode window and validation uses a trailing portion of that same frame. This is a useful test of integrated trajectory behavior, but it is not independent holdout validation. The synthetic comparison experiment described below implements a separate train/validation/holdout procedure specifically for its candidate comparison.
+
+\section{Experimental design}
+
+\subsection{Synthetic delayed-workload data}
+
+The included generator creates three training episodes of 150 samples each at one-minute intervals and one separate 150-sample holdout episode. Each episode contains CPU utilization, instance count, and request rate. CPU is generated from a bounded first-order response to request rate and instance count sampled three time steps earlier, with measurement noise added to CPU. Thus the traces have known delayed input structure, but they are synthetic and do not model the full range of effects in a deployed service. The generator uses a fixed pseudorandom seed (2026) for the bundled data, and an additional seed-specific example is included in the repository.
+
+The training comparison evaluates three model families:
+\begin{description}
+  \item[Current-input SINDy.] Continuous CPU state with current instance count and request rate as control inputs.
+  \item[Delayed-input SINDy.] The same sparse identification workflow, with the two control signals shifted by three samples before fitting.
+  \item[Delayed ARX baseline.] A discrete autoregressive linear regression using previous CPU and the three-sample-delayed controls.
+\end{description}
+
+For each of the three training episodes, the last 16 observations are held out from episode-specific fitting and used to score candidates. For each SINDy family, a model is fitted over each threshold in $\{10^{-5},10^{-4},10^{-3}\}$; the episode's candidate is selected by normalized RMSE, then CPU mean absolute error, then the lower threshold. The final family is selected by the unweighted mean episode normalized RMSE, with mean absolute error as a tie-breaker. The final selected family is refit using the training episodes and scored once on the reserved synthetic holdout episode. The holdout metric excludes the initial sample used to initialize the rollout.
+
+The holdout is temporally disjoint from the training data. The experiment therefore measures performance on a newly generated episode under the same synthetic mechanism, rather than on an independent system or workload distribution.
+
+\subsection{Metrics}
+
+We report normalized RMSE and CPU mean absolute error (MAE) in CPU percentage points. The workflow's default reliability threshold is normalized RMSE $\leq 0.2$. Reliability is reported alongside score and should not be interpreted as statistical confidence or a guarantee of safe operational extrapolation.
+
+\section{Results}
+
+Table~\ref{tab:training-results} reports the episode-wise training comparison generated by the bundled experiment. The ARX baseline has the lowest normalized RMSE in each of two episodes, while delayed-input SINDy has the lowest score in one episode. Averaged across episodes, the selection rule selects the delayed ARX family. Because the ground-truth simulator includes a three-sample input delay, this comparison is consistent with the importance of representing that delay; it does not show that the continuous-time SINDy implementation independently discovers delay from current inputs.
+
+\begin{table}[ht]
+\centering
+\caption{Episode-specific candidate scores on the final 16-sample training windows. MAE is measured over forecast points after the initialization sample.}
+\label{tab:training-results}
+\begin{tabular}{llrr}
+\toprule
+Episode & Candidate & Normalized RMSE & CPU MAE \\
+\midrule
+1 & Current-input SINDy & 0.336 & 1.267 \\
+1 & Delayed-input SINDy & 0.163 & 0.637 \\
+1 & Delayed ARX & 0.110 & 0.415 \\
+2 & Current-input SINDy & 1.100 & 1.066 \\
+2 & Delayed-input SINDy & 0.336 & 0.272 \\
+2 & Delayed ARX & 0.344 & 0.281 \\
+3 & Current-input SINDy & 0.926 & 1.749 \\
+3 & Delayed-input SINDy & 0.224 & 0.382 \\
+3 & Delayed ARX & 0.158 & 0.233 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+On the reserved holdout episode, the selected delayed ARX model achieved normalized RMSE 0.0443 and CPU MAE 0.2818 percentage points. Under the configured 0.2 threshold, this score is classified as reliable. This is evidence of good short-horizon fit for this particular synthetic holdout and generated mechanism. It is not a generalization result for actual cloud telemetry, nor is it the holdout score of a selected SINDy model.
+
+\section{Discussion}
+
+The software makes several assumptions and diagnostics explicit at the level where users configure and inspect a fit. In particular, treating instance count as an exogenous input separates the service's measured state response from the capacity setting supplied by an autoscaler. Deployment-aware segmentation avoids combining windows across known version boundaries by default. A configurable threshold-based mode split provides a way to fit different equations in operational regions selected by the user. These choices support readable candidate models but do not establish causal effects: confounding, collinearity, unobserved inputs, and feedback can all affect coefficient interpretation.
+
+The experiment underscores a practical modeling point: when system response depends on lagged workload, a candidate set based only on instantaneous controls can be misspecified. Adding shifted controls improves the delayed-input SINDy candidate's episode scores relative to current-input SINDy in all three generated episodes. However, the simpler delayed ARX baseline is selected overall. This result motivates testing explicit lagged-input or discrete-time model families alongside continuous-time sparse equations when telemetry suggests delayed response.
+
+The most important validation distinction is between derivative fit and integrated prediction. A high derivative $R^2$ does not guarantee that numerical integration will track a trajectory. The project's forward simulation addresses this gap, while its general workflow's reuse of a fit segment means reliability scores are not an independent out-of-sample estimate. The separate synthetic experiment reserves a holdout episode, but it evaluates only a single known synthetic process.
+
+\section{Limitations and future work}
+
+The present evaluation is limited to generated data. No production CloudWatch dataset, service identity, metric sampling details, deployment history, or operational thresholds are documented in the bundled experiment. Such details are necessary before making claims about operational relevance. In addition:
+\begin{itemize}
+  \item The general pipeline uses a trailing window from the fitting segment for forward-simulation validation; a held-out validation split is not yet the default workflow.
+  \item Threshold-based modes and time-of-day regimes are supplied by the user. Automatic changepoint detection and threshold discovery are not implemented.
+  \item Tier 3 seasonal Fourier models are not evaluated with the state-feedback forward simulator.
+  \item The current version models one service in batch mode. It does not compose multiple services or fit live streams.
+  \item The current feature design does not generally add lagged controls automatically. The delayed-workload experiment adds those inputs specifically for its comparison.
+  \item The $x/u$ partition may be imperfect when nominal controls are endogenous or when important feedback paths are unmeasured.
+\end{itemize}
+
+Future evaluation should include documented real telemetry from one or more services, repeated workload conditions, strict temporally held-out validation, and comparisons against suitable discrete-time and statistical baselines. Additional work could quantify coefficient stability under resampling and noise, support principled lag selection, and examine when the model's assumptions are adequate for capacity or deployment analysis.
+
+\section{Conclusion}
+
+SoftwareDynamicalModeler provides a configurable workflow for turning time-series software telemetry into sparse dynamical model candidates, with deployment and mode metadata, simulation-based diagnostics, and human-readable and serialized outputs. Its bundled synthetic experiment shows that an explicit delayed-input model can produce a low error on a reserved episode of the same generated process, while also showing that a discrete-time baseline can outperform the SINDy candidates in this setting. The next step toward an operational claim is an evaluation using fully documented real telemetry and genuinely independent validation windows.
+
+\section*{Availability}
+
+The source code and synthetic data used for the demonstration are available in the SoftwareDynamicalModeler project repository. Add a permanent public repository URL, release identifier, and archival DOI here before submission: \texttt{[repository and archive URL/DOI]}.
+
+\section*{Acknowledgments}
+
+[Add acknowledgments, funding, and conflict-of-interest statements as applicable.]
+
+\bibliographystyle{plain}
+\bibliography{paper-refs}
+
+\end{document}

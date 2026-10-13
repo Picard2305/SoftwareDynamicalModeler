@@ -1,0 +1,24 @@
+{
+  "run_id": "queue-demo-calibration-20s-275k-001",
+  "rate_per_second": 20,
+  "duration": "120s",
+  "offered_load_complete": true,
+  "iterations_completed": 2400,
+  "requests_completed": 2400,
+  "request_attempts_started": 2400,
+  "request_attempts_completed": 2400,
+  "dropped_iterations": 0,
+  "outcomes": {
+    "accepted": 2400,
+    "non_accepted_responses": 0,
+    "transport_errors": 0,
+    "http_failure_rate": 0
+  },
+  "latency_ms": {
+    "count": 2400,
+    "mean": 20.562873000000025,
+    "median": 22.421149999999997,
+    "p95": 28.240299999999998,
+    "max": 72.9211
+  }
+}

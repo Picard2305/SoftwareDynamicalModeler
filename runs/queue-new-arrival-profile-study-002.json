@@ -1,0 +1,1372 @@
+{
+  "aggregate_by_profile": {
+    "a": {
+      "empty_queue_baseline": {
+        "absolute_peak_error": {
+          "max": 127.0,
+          "mean": 125.66666666666667,
+          "min": 125.0
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 60.0,
+          "mean": 60.0,
+          "min": 60.0
+        },
+        "mae": {
+          "max": 30.433333333333334,
+          "mean": 29.8,
+          "min": 29.433333333333334
+        },
+        "normalized_rmse": {
+          "max": 1.2493729252840122,
+          "mean": 1.245481867721064,
+          "min": 1.2422958758137563
+        },
+        "rmse": {
+          "max": 50.76755306733273,
+          "mean": 49.98971424004881,
+          "min": 49.59435451742466
+        }
+      },
+      "reflected_configured_capacity_reference": {
+        "absolute_peak_error": {
+          "max": 12.45454545454561,
+          "mean": 11.121212121212276,
+          "min": 10.45454545454561
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 4.489898989899034,
+          "mean": 4.061952861952903,
+          "min": 3.7838383838384257
+        },
+        "normalized_rmse": {
+          "max": 0.21981689683229708,
+          "mean": 0.20745564396428473,
+          "min": 0.2001246559206214
+        },
+        "rmse": {
+          "max": 8.93213367217255,
+          "mean": 8.329505494450261,
+          "min": 7.991357820567566
+        }
+      },
+      "reflected_train_estimated_capacity": {
+        "absolute_peak_error": {
+          "max": 2.9380389928499255,
+          "mean": 2.271372326183259,
+          "min": 0.9380389928499255
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 2.7529597689312584,
+          "mean": 2.63444125041274,
+          "min": 2.408515324486814
+        },
+        "normalized_rmse": {
+          "max": 0.10118460774969866,
+          "mean": 0.09787844933748151,
+          "min": 0.09181037007918617
+        },
+        "rmse": {
+          "max": 4.031393660388414,
+          "mean": 3.926938895394916,
+          "min": 3.730661791047688
+        }
+      },
+      "sparse_nonnegative_projection": {
+        "absolute_peak_error": {
+          "max": 66.0193375699583,
+          "mean": 64.68600423662497,
+          "min": 64.0193375699583
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 13.247514487198158,
+          "mean": 12.785369442062006,
+          "min": 12.542316000569242
+        },
+        "normalized_rmse": {
+          "max": 0.5785464252212951,
+          "mean": 0.5699384576424616,
+          "min": 0.5653138499963034
+        },
+        "rmse": {
+          "max": 23.50890254618006,
+          "mean": 22.877260026159025,
+          "min": 22.52321496014942
+        }
+      },
+      "sparse_unconstrained": {
+        "absolute_peak_error": {
+          "max": 68.65895207033934,
+          "mean": 67.325618737006,
+          "min": 66.65895207033934
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 19.90608789611037,
+          "mean": 19.323225988938187,
+          "min": 19.00401725757432
+        },
+        "normalized_rmse": {
+          "max": 0.6560615356437514,
+          "mean": 0.646946256961999,
+          "min": 0.6420881789742726
+        },
+        "rmse": {
+          "max": 26.6586846506687,
+          "mean": 25.9681603681162,
+          "min": 25.605995266087643
+        }
+      }
+    },
+    "b": {
+      "empty_queue_baseline": {
+        "absolute_peak_error": {
+          "max": 175.0,
+          "mean": 168.33333333333334,
+          "min": 164.0
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 60.0,
+          "mean": 60.0,
+          "min": 60.0
+        },
+        "mae": {
+          "max": 57.77777777777778,
+          "mean": 53.21111111111111,
+          "min": 50.077777777777776
+        },
+        "normalized_rmse": {
+          "max": 1.4259862835438226,
+          "mean": 1.39952343847422,
+          "min": 1.3830632401520675
+        },
+        "rmse": {
+          "max": 81.04648871686751,
+          "mean": 76.03717800927721,
+          "min": 72.49099560941652
+        }
+      },
+      "reflected_configured_capacity_reference": {
+        "absolute_peak_error": {
+          "max": 22.27272727272748,
+          "mean": 15.606060606060813,
+          "min": 11.27272727272748
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 12.533333333333427,
+          "mean": 8.275084175084258,
+          "min": 5.342424242424314
+        },
+        "normalized_rmse": {
+          "max": 0.3151129476863955,
+          "mean": 0.23913568395480447,
+          "min": 0.1878311416698687
+        },
+        "rmse": {
+          "max": 17.909567752458305,
+          "mean": 13.088140142006198,
+          "min": 9.844861804442912
+        }
+      },
+      "reflected_train_estimated_capacity": {
+        "absolute_peak_error": {
+          "max": 6.584051990466605,
+          "mean": 5.194683996822202,
+          "min": 4.415948009533395
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 4.355419772633506,
+          "mean": 3.7389613220169196,
+          "min": 3.2919079212885336
+        },
+        "normalized_rmse": {
+          "max": 0.12253201762282974,
+          "mean": 0.10566514099658825,
+          "min": 0.08706907144025405
+        },
+        "rmse": {
+          "max": 6.422315114479416,
+          "mean": 5.733005082458636,
+          "min": 4.6729011179343924
+        }
+      },
+      "sparse_nonnegative_projection": {
+        "absolute_peak_error": {
+          "max": 105.54571036283781,
+          "mean": 98.87904369617115,
+          "min": 94.54571036283781
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 30.433597037320816,
+          "mean": 26.859671956411322,
+          "min": 24.270837462073416
+        },
+        "normalized_rmse": {
+          "max": 0.8133682942121949,
+          "mean": 0.7665465586797398,
+          "min": 0.7344042364527515
+        },
+        "rmse": {
+          "max": 46.22810544551819,
+          "mean": 41.690860807181245,
+          "min": 38.492595808113464
+        }
+      },
+      "sparse_unconstrained": {
+        "absolute_peak_error": {
+          "max": 105.97054853459241,
+          "mean": 99.30388186792574,
+          "min": 94.97054853459241
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 31.79105127844479,
+          "mean": 27.743388785109648,
+          "min": 24.91634440719742
+        },
+        "normalized_rmse": {
+          "max": 0.8203086450608009,
+          "mean": 0.7726922481614142,
+          "min": 0.7400806527925572
+        },
+        "rmse": {
+          "max": 46.62256300323379,
+          "mean": 42.02564306798167,
+          "min": 38.79011587807125
+        }
+      }
+    },
+    "c": {
+      "empty_queue_baseline": {
+        "absolute_peak_error": {
+          "max": 108.0,
+          "mean": 107.33333333333333,
+          "min": 107.0
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 45.0,
+          "mean": 45.0,
+          "min": 45.0
+        },
+        "mae": {
+          "max": 33.63333333333333,
+          "mean": 33.32592592592593,
+          "min": 33.1
+        },
+        "normalized_rmse": {
+          "max": 1.3263995344915351,
+          "mean": 1.3239920501871578,
+          "min": 1.320630084580331
+        },
+        "rmse": {
+          "max": 51.2691156762258,
+          "mean": 50.849450377000416,
+          "min": 50.603030212297234
+        }
+      },
+      "reflected_configured_capacity_reference": {
+        "absolute_peak_error": {
+          "max": 8.454545454545581,
+          "mean": 7.787878787878914,
+          "min": 7.454545454545581
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 4.567676767676827,
+          "mean": 4.368013468013525,
+          "min": 4.212121212121268
+        },
+        "normalized_rmse": {
+          "max": 0.2217523733564121,
+          "mean": 0.21466320258073993,
+          "min": 0.20929065967912674
+        },
+        "rmse": {
+          "max": 8.460001497893131,
+          "mean": 8.243692227880619,
+          "min": 8.031057711822061
+        }
+      },
+      "reflected_train_estimated_capacity": {
+        "absolute_peak_error": {
+          "max": 5.9380389928499255,
+          "mean": 5.6047056595165925,
+          "min": 4.9380389928499255
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 3.5564470060855893,
+          "mean": 3.1121793682142425,
+          "min": 2.5680885369159943
+        },
+        "normalized_rmse": {
+          "max": 0.1324101393628991,
+          "mean": 0.11910068617219942,
+          "min": 0.10246488814695547
+        },
+        "rmse": {
+          "max": 5.051535459987778,
+          "mean": 4.571433281363424,
+          "min": 3.9649027929086698
+        }
+      },
+      "sparse_nonnegative_projection": {
+        "absolute_peak_error": {
+          "max": 45.61874181328061,
+          "mean": 44.952075146613936,
+          "min": 44.61874181328061
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 14.263058027970498,
+          "mean": 14.223031101585372,
+          "min": 14.165199471037345
+        },
+        "normalized_rmse": {
+          "max": 0.5541586866132108,
+          "mean": 0.5511119374551267,
+          "min": 0.5493500808276056
+        },
+        "rmse": {
+          "max": 21.44329988547989,
+          "mean": 21.166582598175626,
+          "min": 20.95807335148357
+        }
+      },
+      "sparse_unconstrained": {
+        "absolute_peak_error": {
+          "max": 45.61874181328061,
+          "mean": 44.952075146613936,
+          "min": 44.61874181328061
+        },
+        "absolute_peak_time_error_seconds": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0
+        },
+        "mae": {
+          "max": 15.307826048868446,
+          "mean": 15.26779912248332,
+          "min": 15.209967491935291
+        },
+        "normalized_rmse": {
+          "max": 0.5598538460082007,
+          "mean": 0.556925229112865,
+          "min": 0.555258863625697
+        },
+        "rmse": {
+          "max": 21.66367540922877,
+          "mean": 21.389829371591645,
+          "min": 21.183497370924545
+        }
+      }
+    }
+  },
+  "configured_capacity_reference_per_second": 18.181818181818183,
+  "experiment": "held-out new arrival profiles at fixed 55 ms service workload",
+  "folds": [
+    {
+      "observed_peak_queue": 125.0,
+      "phases": [
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 30,
+          "expected_requests": 240,
+          "name": "baseline",
+          "rate_per_second": 8,
+          "start_seconds": 0
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 60,
+          "expected_requests": 660,
+          "name": "overload",
+          "rate_per_second": 22,
+          "start_seconds": 30
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 90,
+          "expected_requests": 240,
+          "name": "recovery",
+          "rate_per_second": 8,
+          "start_seconds": 60
+        }
+      ],
+      "profile": "a",
+      "run_id": "queue-demo-new-profile-a-rep-002",
+      "scores": {
+        "empty_queue_baseline": {
+          "absolute_peak_error": 125.0,
+          "absolute_peak_time_error_seconds": 60.0,
+          "mae": 29.533333333333335,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.2447768020654233,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 125.0,
+          "predicted_empty_seconds_after_recovery_start": 0.0,
+          "predicted_peak_queue": 0.0,
+          "rmse": 49.59435451742466
+        },
+        "reflected_configured_capacity_reference": {
+          "absolute_peak_error": 10.45454545454561,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 3.7838383838384257,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.20242537913993577,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 125.0,
+          "predicted_empty_seconds_after_recovery_start": 11.0,
+          "predicted_peak_queue": 114.54545454545439,
+          "rmse": 8.065024990610672
+        },
+        "reflected_train_estimated_capacity": {
+          "absolute_peak_error": 2.9380389928499255,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 2.7529597689312584,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.10118460774969866,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 125.0,
+          "predicted_empty_seconds_after_recovery_start": 13.0,
+          "predicted_peak_queue": 127.93803899284993,
+          "rmse": 4.031393660388414
+        },
+        "sparse_nonnegative_projection": {
+          "absolute_peak_error": 64.0193375699583,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 12.566277838418616,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.5653138499963034,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 125.0,
+          "predicted_empty_seconds_after_recovery_start": 21.0,
+          "predicted_peak_queue": 60.980662430041704,
+          "rmse": 22.52321496014942
+        },
+        "sparse_unconstrained": {
+          "absolute_peak_error": 66.65895207033934,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 19.059572813129876,
+          "negative_prediction_count": 42,
+          "normalized_rmse": 0.6426890562679731,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 125.0,
+          "predicted_empty_seconds_after_recovery_start": 20.0,
+          "predicted_peak_queue": 58.34104792966066,
+          "rmse": 25.605995266087643
+        }
+      }
+    },
+    {
+      "observed_peak_queue": 127.0,
+      "phases": [
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 30,
+          "expected_requests": 240,
+          "name": "baseline",
+          "rate_per_second": 8,
+          "start_seconds": 0
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 60,
+          "expected_requests": 660,
+          "name": "overload",
+          "rate_per_second": 22,
+          "start_seconds": 30
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 90,
+          "expected_requests": 240,
+          "name": "recovery",
+          "rate_per_second": 8,
+          "start_seconds": 60
+        }
+      ],
+      "profile": "a",
+      "run_id": "queue-demo-new-profile-a-rep-003",
+      "scores": {
+        "empty_queue_baseline": {
+          "absolute_peak_error": 127.0,
+          "absolute_peak_time_error_seconds": 60.0,
+          "mae": 30.433333333333334,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.2493729252840122,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 127.0,
+          "predicted_empty_seconds_after_recovery_start": 0.0,
+          "predicted_peak_queue": 0.0,
+          "rmse": 50.76755306733273
+        },
+        "reflected_configured_capacity_reference": {
+          "absolute_peak_error": 12.45454545454561,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 4.489898989899034,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.21981689683229708,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 127.0,
+          "predicted_empty_seconds_after_recovery_start": 11.0,
+          "predicted_peak_queue": 114.54545454545439,
+          "rmse": 8.93213367217255
+        },
+        "reflected_train_estimated_capacity": {
+          "absolute_peak_error": 0.9380389928499255,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 2.408515324486814,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.09181037007918617,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 127.0,
+          "predicted_empty_seconds_after_recovery_start": 13.0,
+          "predicted_peak_queue": 127.93803899284993,
+          "rmse": 3.730661791047688
+        },
+        "sparse_nonnegative_projection": {
+          "absolute_peak_error": 66.0193375699583,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 13.247514487198158,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.5785464252212951,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 127.0,
+          "predicted_empty_seconds_after_recovery_start": 21.0,
+          "predicted_peak_queue": 60.980662430041704,
+          "rmse": 23.50890254618006
+        },
+        "sparse_unconstrained": {
+          "absolute_peak_error": 68.65895207033934,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 19.90608789611037,
+          "negative_prediction_count": 42,
+          "normalized_rmse": 0.6560615356437514,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 127.0,
+          "predicted_empty_seconds_after_recovery_start": 20.0,
+          "predicted_peak_queue": 58.34104792966066,
+          "rmse": 26.6586846506687
+        }
+      }
+    },
+    {
+      "observed_peak_queue": 125.0,
+      "phases": [
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 30,
+          "expected_requests": 240,
+          "name": "baseline",
+          "rate_per_second": 8,
+          "start_seconds": 0
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 60,
+          "expected_requests": 660,
+          "name": "overload",
+          "rate_per_second": 22,
+          "start_seconds": 30
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 90,
+          "expected_requests": 240,
+          "name": "recovery",
+          "rate_per_second": 8,
+          "start_seconds": 60
+        }
+      ],
+      "profile": "a",
+      "run_id": "queue-demo-new-profile-a-retry-001",
+      "scores": {
+        "empty_queue_baseline": {
+          "absolute_peak_error": 125.0,
+          "absolute_peak_time_error_seconds": 60.0,
+          "mae": 29.433333333333334,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.2422958758137563,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 125.0,
+          "predicted_empty_seconds_after_recovery_start": 0.0,
+          "predicted_peak_queue": 0.0,
+          "rmse": 49.60723513538905
+        },
+        "reflected_configured_capacity_reference": {
+          "absolute_peak_error": 10.45454545454561,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 3.9121212121212467,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.2001246559206214,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 125.0,
+          "predicted_empty_seconds_after_recovery_start": 11.0,
+          "predicted_peak_queue": 114.54545454545439,
+          "rmse": 7.991357820567566
+        },
+        "reflected_train_estimated_capacity": {
+          "absolute_peak_error": 2.9380389928499255,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 2.7418486578201473,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.1006403701835597,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 125.0,
+          "predicted_empty_seconds_after_recovery_start": 13.0,
+          "predicted_peak_queue": 127.93803899284993,
+          "rmse": 4.018761234748647
+        },
+        "sparse_nonnegative_projection": {
+          "absolute_peak_error": 64.0193375699583,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 12.542316000569242,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.5659550977097865,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 125.0,
+          "predicted_empty_seconds_after_recovery_start": 21.0,
+          "predicted_peak_queue": 60.980662430041704,
+          "rmse": 22.599662572147594
+        },
+        "sparse_unconstrained": {
+          "absolute_peak_error": 66.65895207033934,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 19.00401725757432,
+          "negative_prediction_count": 42,
+          "normalized_rmse": 0.6420881789742726,
+          "observed_empty_seconds_after_recovery_start": 13.0,
+          "observed_peak_queue": 125.0,
+          "predicted_empty_seconds_after_recovery_start": 20.0,
+          "predicted_peak_queue": 58.34104792966066,
+          "rmse": 25.639801187592255
+        }
+      }
+    },
+    {
+      "observed_peak_queue": 175.0,
+      "phases": [
+        {
+          "duration_seconds": 19.99,
+          "end_seconds": 20,
+          "expected_requests": 200,
+          "name": "baseline",
+          "rate_per_second": 10,
+          "start_seconds": 0
+        },
+        {
+          "duration_seconds": 19.99,
+          "end_seconds": 40,
+          "expected_requests": 420,
+          "name": "ramp_low",
+          "rate_per_second": 21,
+          "start_seconds": 20
+        },
+        {
+          "duration_seconds": 19.99,
+          "end_seconds": 60,
+          "expected_requests": 460,
+          "name": "ramp_high",
+          "rate_per_second": 23,
+          "start_seconds": 40
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 90,
+          "expected_requests": 300,
+          "name": "recovery",
+          "rate_per_second": 10,
+          "start_seconds": 60
+        }
+      ],
+      "profile": "b",
+      "run_id": "queue-demo-new-profile-b-rep-001",
+      "scores": {
+        "empty_queue_baseline": {
+          "absolute_peak_error": 175.0,
+          "absolute_peak_time_error_seconds": 60.0,
+          "mae": 57.77777777777778,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.4259862835438226,
+          "observed_empty_seconds_after_recovery_start": 23.0,
+          "observed_peak_queue": 175.0,
+          "predicted_empty_seconds_after_recovery_start": 0.0,
+          "predicted_peak_queue": 0.0,
+          "rmse": 81.04648871686751
+        },
+        "reflected_configured_capacity_reference": {
+          "absolute_peak_error": 22.27272727272748,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 12.533333333333427,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.3151129476863955,
+          "observed_empty_seconds_after_recovery_start": 23.0,
+          "observed_peak_queue": 175.0,
+          "predicted_empty_seconds_after_recovery_start": 18.0,
+          "predicted_peak_queue": 152.72727272727252,
+          "rmse": 17.909567752458305
+        },
+        "reflected_train_estimated_capacity": {
+          "absolute_peak_error": 4.415948009533395,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 3.5695562721287177,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.10739433392668095,
+          "observed_empty_seconds_after_recovery_start": 23.0,
+          "observed_peak_queue": 175.0,
+          "predicted_empty_seconds_after_recovery_start": 21.0,
+          "predicted_peak_queue": 170.5840519904666,
+          "rmse": 6.1037990149620995
+        },
+        "sparse_nonnegative_projection": {
+          "absolute_peak_error": 105.54571036283781,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 30.433597037320816,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.8133682942121949,
+          "observed_empty_seconds_after_recovery_start": 23.0,
+          "observed_peak_queue": 175.0,
+          "predicted_empty_seconds_after_recovery_start": 30.0,
+          "predicted_peak_queue": 69.45428963716219,
+          "rmse": 46.22810544551819
+        },
+        "sparse_unconstrained": {
+          "absolute_peak_error": 105.97054853459241,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 31.79105127844479,
+          "negative_prediction_count": 21,
+          "normalized_rmse": 0.8203086450608009,
+          "observed_empty_seconds_after_recovery_start": 23.0,
+          "observed_peak_queue": 175.0,
+          "predicted_empty_seconds_after_recovery_start": 30.0,
+          "predicted_peak_queue": 69.02945146540759,
+          "rmse": 46.62256300323379
+        }
+      }
+    },
+    {
+      "observed_peak_queue": 166.0,
+      "phases": [
+        {
+          "duration_seconds": 19.99,
+          "end_seconds": 20,
+          "expected_requests": 200,
+          "name": "baseline",
+          "rate_per_second": 10,
+          "start_seconds": 0
+        },
+        {
+          "duration_seconds": 19.99,
+          "end_seconds": 40,
+          "expected_requests": 420,
+          "name": "ramp_low",
+          "rate_per_second": 21,
+          "start_seconds": 20
+        },
+        {
+          "duration_seconds": 19.99,
+          "end_seconds": 60,
+          "expected_requests": 460,
+          "name": "ramp_high",
+          "rate_per_second": 23,
+          "start_seconds": 40
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 90,
+          "expected_requests": 300,
+          "name": "recovery",
+          "rate_per_second": 10,
+          "start_seconds": 60
+        }
+      ],
+      "profile": "b",
+      "run_id": "queue-demo-new-profile-b-rep-002",
+      "scores": {
+        "empty_queue_baseline": {
+          "absolute_peak_error": 166.0,
+          "absolute_peak_time_error_seconds": 60.0,
+          "mae": 51.77777777777778,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.3895207917267696,
+          "observed_empty_seconds_after_recovery_start": 21.0,
+          "observed_peak_queue": 166.0,
+          "predicted_empty_seconds_after_recovery_start": 0.0,
+          "predicted_peak_queue": 0.0,
+          "rmse": 74.57404970154758
+        },
+        "reflected_configured_capacity_reference": {
+          "absolute_peak_error": 13.27272727272748,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 6.949494949495033,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.21446296250814934,
+          "observed_empty_seconds_after_recovery_start": 21.0,
+          "observed_peak_queue": 166.0,
+          "predicted_empty_seconds_after_recovery_start": 18.0,
+          "predicted_peak_queue": 152.72727272727252,
+          "rmse": 11.509990869117376
+        },
+        "reflected_train_estimated_capacity": {
+          "absolute_peak_error": 4.584051990466605,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 3.2919079212885336,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.08706907144025405,
+          "observed_empty_seconds_after_recovery_start": 21.0,
+          "observed_peak_queue": 166.0,
+          "predicted_empty_seconds_after_recovery_start": 21.0,
+          "predicted_peak_queue": 170.5840519904666,
+          "rmse": 4.6729011179343924
+        },
+        "sparse_nonnegative_projection": {
+          "absolute_peak_error": 96.54571036283781,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 25.87458136983974,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.7518671453742728,
+          "observed_empty_seconds_after_recovery_start": 21.0,
+          "observed_peak_queue": 166.0,
+          "predicted_empty_seconds_after_recovery_start": 30.0,
+          "predicted_peak_queue": 69.45428963716219,
+          "rmse": 40.35188116791208
+        },
+        "sparse_unconstrained": {
+          "absolute_peak_error": 96.97054853459241,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 26.52277066968673,
+          "negative_prediction_count": 21,
+          "normalized_rmse": 0.7576874466308844,
+          "observed_empty_seconds_after_recovery_start": 21.0,
+          "observed_peak_queue": 166.0,
+          "predicted_empty_seconds_after_recovery_start": 30.0,
+          "predicted_peak_queue": 69.02945146540759,
+          "rmse": 40.66425032263998
+        }
+      }
+    },
+    {
+      "observed_peak_queue": 164.0,
+      "phases": [
+        {
+          "duration_seconds": 19.99,
+          "end_seconds": 20,
+          "expected_requests": 200,
+          "name": "baseline",
+          "rate_per_second": 10,
+          "start_seconds": 0
+        },
+        {
+          "duration_seconds": 19.99,
+          "end_seconds": 40,
+          "expected_requests": 420,
+          "name": "ramp_low",
+          "rate_per_second": 21,
+          "start_seconds": 20
+        },
+        {
+          "duration_seconds": 19.99,
+          "end_seconds": 60,
+          "expected_requests": 460,
+          "name": "ramp_high",
+          "rate_per_second": 23,
+          "start_seconds": 40
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 90,
+          "expected_requests": 300,
+          "name": "recovery",
+          "rate_per_second": 10,
+          "start_seconds": 60
+        }
+      ],
+      "profile": "b",
+      "run_id": "queue-demo-new-profile-b-retry-001",
+      "scores": {
+        "empty_queue_baseline": {
+          "absolute_peak_error": 164.0,
+          "absolute_peak_time_error_seconds": 60.0,
+          "mae": 50.077777777777776,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.3830632401520675,
+          "observed_empty_seconds_after_recovery_start": 21.0,
+          "observed_peak_queue": 164.0,
+          "predicted_empty_seconds_after_recovery_start": 0.0,
+          "predicted_peak_queue": 0.0,
+          "rmse": 72.49099560941652
+        },
+        "reflected_configured_capacity_reference": {
+          "absolute_peak_error": 11.27272727272748,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 5.342424242424314,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.1878311416698687,
+          "observed_empty_seconds_after_recovery_start": 21.0,
+          "observed_peak_queue": 164.0,
+          "predicted_empty_seconds_after_recovery_start": 18.0,
+          "predicted_peak_queue": 152.72727272727252,
+          "rmse": 9.844861804442912
+        },
+        "reflected_train_estimated_capacity": {
+          "absolute_peak_error": 6.584051990466605,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 4.355419772633506,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.12253201762282974,
+          "observed_empty_seconds_after_recovery_start": 21.0,
+          "observed_peak_queue": 164.0,
+          "predicted_empty_seconds_after_recovery_start": 21.0,
+          "predicted_peak_queue": 170.5840519904666,
+          "rmse": 6.422315114479416
+        },
+        "sparse_nonnegative_projection": {
+          "absolute_peak_error": 94.54571036283781,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 24.270837462073416,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.7344042364527515,
+          "observed_empty_seconds_after_recovery_start": 21.0,
+          "observed_peak_queue": 164.0,
+          "predicted_empty_seconds_after_recovery_start": 30.0,
+          "predicted_peak_queue": 69.45428963716219,
+          "rmse": 38.492595808113464
+        },
+        "sparse_unconstrained": {
+          "absolute_peak_error": 94.97054853459241,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 24.91634440719742,
+          "negative_prediction_count": 21,
+          "normalized_rmse": 0.7400806527925572,
+          "observed_empty_seconds_after_recovery_start": 21.0,
+          "observed_peak_queue": 164.0,
+          "predicted_empty_seconds_after_recovery_start": 30.0,
+          "predicted_peak_queue": 69.02945146540759,
+          "rmse": 38.79011587807125
+        }
+      }
+    },
+    {
+      "observed_peak_queue": 108.0,
+      "phases": [
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 15,
+          "expected_requests": 180,
+          "name": "baseline",
+          "rate_per_second": 12,
+          "start_seconds": 0
+        },
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 30,
+          "expected_requests": 300,
+          "name": "overload_low",
+          "rate_per_second": 20,
+          "start_seconds": 15
+        },
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 45,
+          "expected_requests": 345,
+          "name": "overload_high",
+          "rate_per_second": 23,
+          "start_seconds": 30
+        },
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 60,
+          "expected_requests": 240,
+          "name": "partial_recovery",
+          "rate_per_second": 16,
+          "start_seconds": 45
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 90,
+          "expected_requests": 240,
+          "name": "recovery",
+          "rate_per_second": 8,
+          "start_seconds": 60
+        }
+      ],
+      "profile": "c",
+      "run_id": "queue-demo-new-profile-c-rep-001",
+      "scores": {
+        "empty_queue_baseline": {
+          "absolute_peak_error": 108.0,
+          "absolute_peak_time_error_seconds": 45.0,
+          "mae": 33.63333333333333,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.324946531489607,
+          "observed_empty_seconds_after_recovery_start": 8.0,
+          "observed_peak_queue": 108.0,
+          "predicted_empty_seconds_after_recovery_start": 0.0,
+          "predicted_peak_queue": 0.0,
+          "rmse": 51.2691156762258
+        },
+        "reflected_configured_capacity_reference": {
+          "absolute_peak_error": 8.454545454545581,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 4.567676767676827,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.2129465747066809,
+          "observed_empty_seconds_after_recovery_start": 8.0,
+          "observed_peak_queue": 108.0,
+          "predicted_empty_seconds_after_recovery_start": 6.0,
+          "predicted_peak_queue": 99.54545454545442,
+          "rmse": 8.240017473926661
+        },
+        "reflected_train_estimated_capacity": {
+          "absolute_peak_error": 4.9380389928499255,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 2.5680885369159943,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.10246488814695547,
+          "observed_empty_seconds_after_recovery_start": 8.0,
+          "observed_peak_queue": 108.0,
+          "predicted_empty_seconds_after_recovery_start": 8.0,
+          "predicted_peak_queue": 112.93803899284993,
+          "rmse": 3.9649027929086698
+        },
+        "sparse_nonnegative_projection": {
+          "absolute_peak_error": 45.61874181328061,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 14.263058027970498,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.5541586866132108,
+          "observed_empty_seconds_after_recovery_start": 8.0,
+          "observed_peak_queue": 108.0,
+          "predicted_empty_seconds_after_recovery_start": 17.0,
+          "predicted_peak_queue": 62.38125818671939,
+          "rmse": 21.44329988547989
+        },
+        "sparse_unconstrained": {
+          "absolute_peak_error": 45.61874181328061,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 15.307826048868446,
+          "negative_prediction_count": 13,
+          "normalized_rmse": 0.5598538460082007,
+          "observed_empty_seconds_after_recovery_start": 8.0,
+          "observed_peak_queue": 108.0,
+          "predicted_empty_seconds_after_recovery_start": 17.0,
+          "predicted_peak_queue": 62.38125818671939,
+          "rmse": 21.66367540922877
+        }
+      }
+    },
+    {
+      "observed_peak_queue": 107.0,
+      "phases": [
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 15,
+          "expected_requests": 180,
+          "name": "baseline",
+          "rate_per_second": 12,
+          "start_seconds": 0
+        },
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 30,
+          "expected_requests": 300,
+          "name": "overload_low",
+          "rate_per_second": 20,
+          "start_seconds": 15
+        },
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 45,
+          "expected_requests": 345,
+          "name": "overload_high",
+          "rate_per_second": 23,
+          "start_seconds": 30
+        },
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 60,
+          "expected_requests": 240,
+          "name": "partial_recovery",
+          "rate_per_second": 16,
+          "start_seconds": 45
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 90,
+          "expected_requests": 240,
+          "name": "recovery",
+          "rate_per_second": 8,
+          "start_seconds": 60
+        }
+      ],
+      "profile": "c",
+      "run_id": "queue-demo-new-profile-c-retry-001",
+      "scores": {
+        "empty_queue_baseline": {
+          "absolute_peak_error": 107.0,
+          "absolute_peak_time_error_seconds": 45.0,
+          "mae": 33.24444444444445,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.3263995344915351,
+          "observed_empty_seconds_after_recovery_start": 9.0,
+          "observed_peak_queue": 107.0,
+          "predicted_empty_seconds_after_recovery_start": 0.0,
+          "predicted_peak_queue": 0.0,
+          "rmse": 50.603030212297234
+        },
+        "reflected_configured_capacity_reference": {
+          "absolute_peak_error": 7.454545454545581,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 4.324242424242479,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.2217523733564121,
+          "observed_empty_seconds_after_recovery_start": 9.0,
+          "observed_peak_queue": 107.0,
+          "predicted_empty_seconds_after_recovery_start": 6.0,
+          "predicted_peak_queue": 99.54545454545442,
+          "rmse": 8.460001497893131
+        },
+        "reflected_train_estimated_capacity": {
+          "absolute_peak_error": 5.9380389928499255,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 3.5564470060855893,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.1324101393628991,
+          "observed_empty_seconds_after_recovery_start": 9.0,
+          "observed_peak_queue": 107.0,
+          "predicted_empty_seconds_after_recovery_start": 8.0,
+          "predicted_peak_queue": 112.93803899284993,
+          "rmse": 5.051535459987778
+        },
+        "sparse_nonnegative_projection": {
+          "absolute_peak_error": 44.61874181328061,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 14.165199471037345,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.5493500808276056,
+          "observed_empty_seconds_after_recovery_start": 9.0,
+          "observed_peak_queue": 107.0,
+          "predicted_empty_seconds_after_recovery_start": 17.0,
+          "predicted_peak_queue": 62.38125818671939,
+          "rmse": 20.95807335148357
+        },
+        "sparse_unconstrained": {
+          "absolute_peak_error": 44.61874181328061,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 15.209967491935291,
+          "negative_prediction_count": 13,
+          "normalized_rmse": 0.555258863625697,
+          "observed_empty_seconds_after_recovery_start": 9.0,
+          "observed_peak_queue": 107.0,
+          "predicted_empty_seconds_after_recovery_start": 17.0,
+          "predicted_peak_queue": 62.38125818671939,
+          "rmse": 21.183497370924545
+        }
+      }
+    },
+    {
+      "observed_peak_queue": 107.0,
+      "phases": [
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 15,
+          "expected_requests": 180,
+          "name": "baseline",
+          "rate_per_second": 12,
+          "start_seconds": 0
+        },
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 30,
+          "expected_requests": 300,
+          "name": "overload_low",
+          "rate_per_second": 20,
+          "start_seconds": 15
+        },
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 45,
+          "expected_requests": 345,
+          "name": "overload_high",
+          "rate_per_second": 23,
+          "start_seconds": 30
+        },
+        {
+          "duration_seconds": 14.99,
+          "end_seconds": 60,
+          "expected_requests": 240,
+          "name": "partial_recovery",
+          "rate_per_second": 16,
+          "start_seconds": 45
+        },
+        {
+          "duration_seconds": 29.99,
+          "end_seconds": 90,
+          "expected_requests": 240,
+          "name": "recovery",
+          "rate_per_second": 8,
+          "start_seconds": 60
+        }
+      ],
+      "profile": "c",
+      "run_id": "queue-demo-new-profile-c-rep-003",
+      "scores": {
+        "empty_queue_baseline": {
+          "absolute_peak_error": 107.0,
+          "absolute_peak_time_error_seconds": 45.0,
+          "mae": 33.1,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 1.320630084580331,
+          "observed_empty_seconds_after_recovery_start": 9.0,
+          "observed_peak_queue": 107.0,
+          "predicted_empty_seconds_after_recovery_start": 0.0,
+          "predicted_peak_queue": 0.0,
+          "rmse": 50.676205242478225
+        },
+        "reflected_configured_capacity_reference": {
+          "absolute_peak_error": 7.454545454545581,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 4.212121212121268,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.20929065967912674,
+          "observed_empty_seconds_after_recovery_start": 9.0,
+          "observed_peak_queue": 107.0,
+          "predicted_empty_seconds_after_recovery_start": 6.0,
+          "predicted_peak_queue": 99.54545454545442,
+          "rmse": 8.031057711822061
+        },
+        "reflected_train_estimated_capacity": {
+          "absolute_peak_error": 5.9380389928499255,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 3.2120025616411447,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.12242703100674368,
+          "observed_empty_seconds_after_recovery_start": 9.0,
+          "observed_peak_queue": 107.0,
+          "predicted_empty_seconds_after_recovery_start": 8.0,
+          "predicted_peak_queue": 112.93803899284993,
+          "rmse": 4.697861591193824
+        },
+        "sparse_nonnegative_projection": {
+          "absolute_peak_error": 44.61874181328061,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 14.240835805748276,
+          "negative_prediction_count": 0,
+          "normalized_rmse": 0.5498270449245635,
+          "observed_empty_seconds_after_recovery_start": 9.0,
+          "observed_peak_queue": 107.0,
+          "predicted_empty_seconds_after_recovery_start": 17.0,
+          "predicted_peak_queue": 62.38125818671939,
+          "rmse": 21.098374557563414
+        },
+        "sparse_unconstrained": {
+          "absolute_peak_error": 44.61874181328061,
+          "absolute_peak_time_error_seconds": 1.0,
+          "mae": 15.285603826646224,
+          "negative_prediction_count": 13,
+          "normalized_rmse": 0.5556629777046973,
+          "observed_empty_seconds_after_recovery_start": 9.0,
+          "observed_peak_queue": 107.0,
+          "predicted_empty_seconds_after_recovery_start": 17.0,
+          "predicted_peak_queue": 62.38125818671939,
+          "rmse": 21.322315334621624
+        }
+      }
+    }
+  ],
+  "forecast_inputs": "known arrival schedule and empty initial queue; no held-out completion or queue observations used as forecast inputs",
+  "held_out_run_ids": [
+    "queue-demo-new-profile-a-rep-002",
+    "queue-demo-new-profile-a-rep-003",
+    "queue-demo-new-profile-a-retry-001",
+    "queue-demo-new-profile-b-rep-001",
+    "queue-demo-new-profile-b-rep-002",
+    "queue-demo-new-profile-b-retry-001",
+    "queue-demo-new-profile-c-rep-001",
+    "queue-demo-new-profile-c-retry-001",
+    "queue-demo-new-profile-c-rep-003"
+  ],
+  "interpretation_limit": "three replicates per held-out profile; exploratory estimates, not a confirmatory significance test",
+  "reflected_model": {
+    "equation": "Q[k] = max(0, Q[k-1] + (arrival_rate[k] - training_estimated_capacity) * 1 second)",
+    "service_capacity_estimator": "inverse mean FIFO-inferred service duration from training runs only"
+  },
+  "service_workload_seconds": 0.055,
+  "sparse_model": {
+    "coefficients": [
+      [
+        -0.06291754853717624,
+        -4.638350511968026,
+        0.41635774393681807
+      ]
+    ],
+    "differentiation": "Savitzky-Golay window 7, polynomial order 2",
+    "feature_order": [
+      "QueueDepth",
+      "1",
+      "u:ArrivalRate"
+    ],
+    "optimizer": "STLSQ",
+    "sparsity_threshold": 0.001
+  },
+  "state": "waiting queue depth reconstructed from accepted/completed timestamps under one-worker FIFO",
+  "training_estimated_capacity_per_second": 17.73539870023834,
+  "training_mean_inferred_service_seconds": 0.05638441046079,
+  "training_run_ids": [
+    "queue-demo-service-time-55ms-profile-002",
+    "queue-demo-service-time-55ms-profile-003",
+    "queue-demo-service-time-55ms-profile-004"
+  ],
+  "training_samples": 273
+}

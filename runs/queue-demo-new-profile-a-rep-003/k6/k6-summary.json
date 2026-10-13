@@ -1,0 +1,48 @@
+{
+  "run_id": "queue-demo-new-profile-a-rep-003",
+  "phases": [
+    {
+      "name": "baseline",
+      "start_seconds": 0,
+      "end_seconds": 30,
+      "duration_seconds": 29.99,
+      "rate_per_second": 8,
+      "expected_requests": 240
+    },
+    {
+      "name": "overload",
+      "start_seconds": 30,
+      "end_seconds": 60,
+      "duration_seconds": 29.99,
+      "rate_per_second": 22,
+      "expected_requests": 660
+    },
+    {
+      "name": "recovery",
+      "start_seconds": 60,
+      "end_seconds": 90,
+      "duration_seconds": 29.99,
+      "rate_per_second": 8,
+      "expected_requests": 240
+    }
+  ],
+  "expected_requests": 1140,
+  "iterations_completed": 1140,
+  "requests_completed": 1140,
+  "request_attempts_started": 1140,
+  "request_attempts_completed": 1140,
+  "dropped_iterations": 0,
+  "outcomes": {
+    "accepted": 1140,
+    "non_accepted_responses": 0,
+    "transport_errors": 0,
+    "http_failure_rate": 0
+  },
+  "latency_ms": {
+    "count": 1140,
+    "mean": 2.7866714035087705,
+    "median": 2.00045,
+    "p95": 3.565984999999999,
+    "max": 161.4952
+  }
+}

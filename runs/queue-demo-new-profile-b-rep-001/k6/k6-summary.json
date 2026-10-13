@@ -1,0 +1,56 @@
+{
+  "run_id": "queue-demo-new-profile-b-rep-001",
+  "phases": [
+    {
+      "name": "baseline",
+      "start_seconds": 0,
+      "end_seconds": 20,
+      "duration_seconds": 19.99,
+      "rate_per_second": 10,
+      "expected_requests": 200
+    },
+    {
+      "name": "ramp_low",
+      "start_seconds": 20,
+      "end_seconds": 40,
+      "duration_seconds": 19.99,
+      "rate_per_second": 21,
+      "expected_requests": 420
+    },
+    {
+      "name": "ramp_high",
+      "start_seconds": 40,
+      "end_seconds": 60,
+      "duration_seconds": 19.99,
+      "rate_per_second": 23,
+      "expected_requests": 460
+    },
+    {
+      "name": "recovery",
+      "start_seconds": 60,
+      "end_seconds": 90,
+      "duration_seconds": 29.99,
+      "rate_per_second": 10,
+      "expected_requests": 300
+    }
+  ],
+  "expected_requests": 1380,
+  "iterations_completed": 1380,
+  "requests_completed": 1380,
+  "request_attempts_started": 1380,
+  "request_attempts_completed": 1380,
+  "dropped_iterations": 0,
+  "outcomes": {
+    "accepted": 1380,
+    "non_accepted_responses": 0,
+    "transport_errors": 0,
+    "http_failure_rate": 0
+  },
+  "latency_ms": {
+    "count": 1380,
+    "mean": 4.1302237681159495,
+    "median": 2.0092,
+    "p95": 8.855914999999976,
+    "max": 241.9137
+  }
+}

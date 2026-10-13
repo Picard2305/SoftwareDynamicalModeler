@@ -1,0 +1,53 @@
+{
+  "models": [
+    {
+      "coefficients": [
+        [
+          -0.0010309783970785438,
+          0.05156261586913703
+        ]
+      ],
+      "feature_names": [
+        "CPU",
+        "u:Instances"
+      ],
+      "x_variables": [
+        "CPU"
+      ],
+      "u_variables": [
+        "Instances"
+      ],
+      "equations": [
+        "dCPU/dt = - 0.0010*CPU + 0.0516*u:Instances"
+      ],
+      "library_tiers": [
+        "tier_1_linear_domain"
+      ],
+      "condition_number": 1.0,
+      "condition_number_warning": null,
+      "differentiation_method": "savitzky_golay",
+      "differentiation_params": {
+        "kind": "savitzky_golay",
+        "left": 300.0,
+        "right": 300.0,
+        "order": 3
+      },
+      "optimizer_method": "stlsq",
+      "sparsity_threshold": 0.001,
+      "n_nonzero_terms": 2,
+      "segment_metadata": {
+        "deploy_id": null,
+        "regime_label": "business_hours",
+        "start": "2024-01-01T00:00:00+00:00",
+        "end": "2024-01-01T00:59:00+00:00",
+        "sample_count": 60,
+        "data_quality_flag": null
+      },
+      "mode_label": "default",
+      "sample_count": 60,
+      "r_squared": 0.9999617579247944,
+      "validation_score": 0.13974420402302246,
+      "is_reliable": true
+    }
+  ]
+}

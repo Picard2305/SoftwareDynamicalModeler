@@ -1,0 +1,24 @@
+{
+  "run_id": "queue-demo-rate-20-diagnostic-001",
+  "rate_per_second": 20,
+  "duration": "60s",
+  "offered_load_complete": true,
+  "iterations_completed": 1200,
+  "requests_completed": 1200,
+  "request_attempts_started": 1200,
+  "request_attempts_completed": 1200,
+  "dropped_iterations": 0,
+  "outcomes": {
+    "accepted": 1200,
+    "non_accepted_responses": 0,
+    "transport_errors": 0,
+    "http_failure_rate": 0
+  },
+  "latency_ms": {
+    "count": 1200,
+    "mean": 15.931859999999997,
+    "median": 11.7864,
+    "p95": 28.19467,
+    "max": 238.142
+  }
+}

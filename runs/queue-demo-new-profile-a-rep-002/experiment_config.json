@@ -1,0 +1,36 @@
+{
+  "cpu_work_units": 0,
+  "expected_requests": 1140,
+  "processor": "time.sleep",
+  "profile": "a",
+  "run_id": "queue-demo-new-profile-a-rep-002",
+  "sampling_interval_seconds": 1.0,
+  "schedule": [
+    {
+      "duration_seconds": 29.99,
+      "end_seconds": 30,
+      "expected_requests": 240,
+      "name": "baseline",
+      "rate_per_second": 8,
+      "start_seconds": 0
+    },
+    {
+      "duration_seconds": 29.99,
+      "end_seconds": 60,
+      "expected_requests": 660,
+      "name": "overload",
+      "rate_per_second": 22,
+      "start_seconds": 30
+    },
+    {
+      "duration_seconds": 29.99,
+      "end_seconds": 90,
+      "expected_requests": 240,
+      "name": "recovery",
+      "rate_per_second": 8,
+      "start_seconds": 60
+    }
+  ],
+  "service_time_seconds": 0.055,
+  "worker_count": 1
+}

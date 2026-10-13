@@ -1,0 +1,24 @@
+{
+  "run_id": "queue-demo-rate-25-001",
+  "rate_per_second": 25,
+  "duration": "60s",
+  "offered_load_complete": true,
+  "iterations_completed": 1500,
+  "requests_completed": 1500,
+  "request_attempts_started": 1500,
+  "request_attempts_completed": 1500,
+  "dropped_iterations": 0,
+  "outcomes": {
+    "accepted": 1500,
+    "non_accepted_responses": 0,
+    "transport_errors": 0,
+    "http_failure_rate": 0
+  },
+  "latency_ms": {
+    "count": 1500,
+    "mean": 11.07626946666666,
+    "median": 9.44595,
+    "p95": 19.279004999999994,
+    "max": 156.2415
+  }
+}

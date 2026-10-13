@@ -1,0 +1,42 @@
+{
+  "run_id": "queue-demo-service-time-55ms-profile-001",
+  "phases": [
+    {
+      "name": "baseline",
+      "startTime": "0s",
+      "duration": "30s",
+      "rate": 10
+    },
+    {
+      "name": "overload",
+      "startTime": "30s",
+      "duration": "30s",
+      "rate": 20
+    },
+    {
+      "name": "recovery",
+      "startTime": "60s",
+      "duration": "30s",
+      "rate": 10
+    }
+  ],
+  "expected_requests": 1200,
+  "iterations_completed": 1202,
+  "requests_completed": 1202,
+  "request_attempts_started": 1202,
+  "request_attempts_completed": 1202,
+  "dropped_iterations": 0,
+  "outcomes": {
+    "accepted": 1202,
+    "non_accepted_responses": 0,
+    "transport_errors": 0,
+    "http_failure_rate": 0
+  },
+  "latency_ms": {
+    "count": 1202,
+    "mean": 2.099024126455906,
+    "median": 1.96155,
+    "p95": 2.9717750000000005,
+    "max": 67.0583
+  }
+}

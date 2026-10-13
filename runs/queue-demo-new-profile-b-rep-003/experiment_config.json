@@ -1,0 +1,44 @@
+{
+  "cpu_work_units": 0,
+  "expected_requests": 1380,
+  "processor": "time.sleep",
+  "profile": "b",
+  "run_id": "queue-demo-new-profile-b-rep-003",
+  "sampling_interval_seconds": 1.0,
+  "schedule": [
+    {
+      "duration_seconds": 19.99,
+      "end_seconds": 20,
+      "expected_requests": 200,
+      "name": "baseline",
+      "rate_per_second": 10,
+      "start_seconds": 0
+    },
+    {
+      "duration_seconds": 19.99,
+      "end_seconds": 40,
+      "expected_requests": 420,
+      "name": "ramp_low",
+      "rate_per_second": 21,
+      "start_seconds": 20
+    },
+    {
+      "duration_seconds": 19.99,
+      "end_seconds": 60,
+      "expected_requests": 460,
+      "name": "ramp_high",
+      "rate_per_second": 23,
+      "start_seconds": 40
+    },
+    {
+      "duration_seconds": 29.99,
+      "end_seconds": 90,
+      "expected_requests": 300,
+      "name": "recovery",
+      "rate_per_second": 10,
+      "start_seconds": 60
+    }
+  ],
+  "service_time_seconds": 0.055,
+  "worker_count": 1
+}

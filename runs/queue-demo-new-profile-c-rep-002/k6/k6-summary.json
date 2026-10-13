@@ -1,0 +1,64 @@
+{
+  "run_id": "queue-demo-new-profile-c-rep-002",
+  "phases": [
+    {
+      "name": "baseline",
+      "start_seconds": 0,
+      "end_seconds": 15,
+      "duration_seconds": 14.99,
+      "rate_per_second": 12,
+      "expected_requests": 180
+    },
+    {
+      "name": "overload_low",
+      "start_seconds": 15,
+      "end_seconds": 30,
+      "duration_seconds": 14.99,
+      "rate_per_second": 20,
+      "expected_requests": 300
+    },
+    {
+      "name": "overload_high",
+      "start_seconds": 30,
+      "end_seconds": 45,
+      "duration_seconds": 14.99,
+      "rate_per_second": 23,
+      "expected_requests": 345
+    },
+    {
+      "name": "partial_recovery",
+      "start_seconds": 45,
+      "end_seconds": 60,
+      "duration_seconds": 14.99,
+      "rate_per_second": 16,
+      "expected_requests": 240
+    },
+    {
+      "name": "recovery",
+      "start_seconds": 60,
+      "end_seconds": 90,
+      "duration_seconds": 29.99,
+      "rate_per_second": 8,
+      "expected_requests": 240
+    }
+  ],
+  "expected_requests": 1305,
+  "iterations_completed": 1306,
+  "requests_completed": 1306,
+  "request_attempts_started": 1306,
+  "request_attempts_completed": 1306,
+  "dropped_iterations": 0,
+  "outcomes": {
+    "accepted": 1304,
+    "non_accepted_responses": 0,
+    "transport_errors": 2,
+    "http_failure_rate": 0.0015313935681470138
+  },
+  "latency_ms": {
+    "count": 1306,
+    "mean": 3.7138155436447144,
+    "median": 1.8428499999999999,
+    "p95": 6.337949999999999,
+    "max": 237.1258
+  }
+}

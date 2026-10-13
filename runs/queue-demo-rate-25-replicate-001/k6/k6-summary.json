@@ -1,0 +1,24 @@
+{
+  "run_id": "queue-demo-rate-25-replicate-001",
+  "rate_per_second": 25,
+  "duration": "120s",
+  "offered_load_complete": true,
+  "iterations_completed": 3000,
+  "requests_completed": 3000,
+  "request_attempts_started": 3000,
+  "request_attempts_completed": 3000,
+  "dropped_iterations": 0,
+  "outcomes": {
+    "accepted": 3000,
+    "non_accepted_responses": 0,
+    "transport_errors": 0,
+    "http_failure_rate": 0
+  },
+  "latency_ms": {
+    "count": 3000,
+    "mean": 16.303617699999975,
+    "median": 15.73985,
+    "p95": 25.477259999999998,
+    "max": 143.4501
+  }
+}

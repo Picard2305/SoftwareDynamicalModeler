@@ -1,0 +1,29 @@
+{
+  "cpu_work_units": 0,
+  "expected_requests": 1200,
+  "processor": "time.sleep",
+  "run_id": "queue-demo-service-time-55ms-profile-001",
+  "sampling_interval_seconds": 1.0,
+  "schedule": [
+    {
+      "duration_seconds": 30,
+      "name": "baseline",
+      "rate_per_second": 10,
+      "start_seconds": 0
+    },
+    {
+      "duration_seconds": 30,
+      "name": "overload",
+      "rate_per_second": 20,
+      "start_seconds": 30
+    },
+    {
+      "duration_seconds": 30,
+      "name": "recovery",
+      "rate_per_second": 10,
+      "start_seconds": 60
+    }
+  ],
+  "service_time_seconds": 0.055,
+  "worker_count": 1
+}

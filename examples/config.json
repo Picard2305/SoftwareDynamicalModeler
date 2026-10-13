@@ -1,0 +1,96 @@
+{
+  "ingestion": {
+    "telemetry_source": {
+      "source_type": "csv_export",
+      "region": null,
+      "namespace": null,
+      "metric_names": [],
+      "native_sampling_interval_seconds": null
+    },
+    "non_aws_sources": [],
+    "variables": [
+      {
+        "name": "CPU",
+        "role": "state",
+        "unit": null,
+        "resampling_method": "linear_interpolation"
+      },
+      {
+        "name": "Instances",
+        "role": "control",
+        "unit": null,
+        "resampling_method": "zero_order_hold"
+      }
+    ],
+    "data_quality": {
+      "max_clock_skew_seconds": 5.0,
+      "missing_data_strategy": "forward_fill_state_gap_flag_control",
+      "unit_normalization": {}
+    }
+  },
+  "segmentation": {
+    "deploy_boundary_source": "unknown",
+    "allow_fit_across_deploy_boundary": false,
+    "regime_detection_method": "time_of_day_rule",
+    "business_hours_start_utc": 0,
+    "business_hours_end_utc": 24,
+    "min_segment_length_samples": 10,
+    "min_dynamic_range_threshold": {},
+    "autoscaling_frozen_window_metadata_key": null
+  },
+  "plant_controller_split": {
+    "x_variables": [
+      "CPU"
+    ],
+    "u_variables": [
+      "Instances"
+    ],
+    "hold_instances_constant": false,
+    "filter_to_autoscaling_frozen_windows_only": false,
+    "known_feedback_limitations": [
+      "RequestRate may be partly a function of Latency via client-side retry/backoff; this is a real feedback loop inside x and is not externalized by this split (spec Section 3)."
+    ]
+  },
+  "mode_switching": {
+    "enabled": false,
+    "thresholds": []
+  },
+  "feature_library": {
+    "enabled_tiers": [
+      "tier_1_linear_domain"
+    ],
+    "tier1": {
+      "domain_terms": []
+    },
+    "tier2": null,
+    "tier3": null,
+    "condition_number_warning_threshold": 10000000000.0
+  },
+  "differentiation": {
+    "method": "savitzky_golay",
+    "savgol_window_length": 11,
+    "savgol_polyorder": 3
+  },
+  "optimizer": {
+    "method": "stlsq",
+    "sparsity_threshold_grid": [
+      0.001,
+      0.01,
+      0.05,
+      0.1
+    ],
+    "guidance_note": "STLSQ is the default. Switch to SR3 for noisy/correlated telemetry (likely the common case for AWS CloudWatch data) \u2014 this is guidance text, not an automatic decision in v1 (spec Section 6)."
+  },
+  "validation": {
+    "horizon_minutes": 5.0,
+    "divergence_metric": "normalized_rmse",
+    "acceptance_threshold": 0.2
+  },
+  "open_design_questions": {
+    "telemetry_access_method_confirmed": "csv_export",
+    "native_sampling_interval_confirmed": true,
+    "deploy_boundary_source_confirmed": true,
+    "autoscaler_disabled_loadtest_data_available": false,
+    "known_operational_thresholds_seeded": true
+  }
+}
