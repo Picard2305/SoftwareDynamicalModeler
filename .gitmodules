@@ -1,0 +1,3 @@
+[submodule "sdmodeler"]
+	path = sdmodeler
+	url = https://github.com/Picard2305/Software-Dynamical-Modeler.git
