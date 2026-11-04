@@ -1,6 +1,6 @@
+import argparse
 import csv
 import json
-import math
 import statistics
 import sys
 from datetime import datetime
@@ -10,8 +10,8 @@ from types import SimpleNamespace
 import numpy as np
 import pandas as pd
 
-project_root = Path(r"C:\Users\jmfel\Documents\Python\SoftwareDynamicalModeler")
-sys.path.insert(0, str(project_root))
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT))
 
 from sdmodeler.config import DifferentiationMethod, FeatureLibraryTier, PipelineConfig
 from sdmodeler.identification.differentiation import differentiate
@@ -19,6 +19,10 @@ from sdmodeler.identification.feature_library import build_feature_library, buil
 from sdmodeler.identification.optimizer import build_optimizer
 from sdmodeler.identification.plant_controller import build_plant_controller_data
 from sdmodeler.validation import normalized_rmse, simulate_forward
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--output", type=Path)
+args = parser.parse_args()
 
 training_run_ids = [
     "queue-demo-service-time-55ms-profile-002",
@@ -38,7 +42,7 @@ held_out_run_ids = [
 ]
 sparsity_threshold = 0.001
 
-config = PipelineConfig.from_file(project_root / "examples" / "synthetic_config.json")
+config = PipelineConfig.from_file(PROJECT_ROOT / "examples" / "synthetic_config.json")
 config.plant_controller_split.x_variables = ["QueueDepth"]
 config.plant_controller_split.u_variables = ["ArrivalRate"]
 config.feature_library.enabled_tiers = [FeatureLibraryTier.TIER_1_LINEAR_DOMAIN]
@@ -54,7 +58,7 @@ def parse_utc(value):
 
 
 def load_run(run_id):
-    run_root = project_root / "runs" / run_id
+    run_root = PROJECT_ROOT / "runs" / run_id
     app_dir = run_root / "app"
     with (run_root / "experiment_config.json").open(encoding="utf-8") as stream:
         experiment = json.load(stream)
@@ -347,7 +351,12 @@ result = {
     "aggregate_by_profile": aggregate,
     "interpretation_limit": "three replicates per held-out profile; exploratory estimates, not a confirmatory significance test",
 }
-output_path = project_root / "runs" / "queue-new-arrival-profile-study-002.json"
-output_path.write_text(json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "\n", encoding="utf-8")
-print(json.dumps(result, indent=2, sort_keys=True, allow_nan=False))
-print(f"saved_to={output_path}")
+serialized_result = json.dumps(result, indent=2, sort_keys=True, allow_nan=False)
+print(serialized_result)
+if args.output is not None:
+    output_path = args.output
+    if not output_path.is_absolute():
+        output_path = PROJECT_ROOT / output_path
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(serialized_result + "\n", encoding="utf-8")
+    print(f"saved_to={output_path}")

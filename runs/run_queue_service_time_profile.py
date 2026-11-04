@@ -13,9 +13,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit
 
-project_root = Path(r"C:\Users\jmfel\Documents\Python\SoftwareDynamicalModeler")
-os.chdir(project_root)
-sys.path.insert(0, str(project_root))
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT))
+K6_SCRIPT = Path(__file__).with_name("queue_service_time_profile.js")
 
 from experiments.queueing_demo.app import QueueingApp
 
@@ -53,7 +53,7 @@ profiles = {
     ],
 }
 schedule = profiles[args.profile]
-run_root = project_root / "runs" / run_id
+run_root = PROJECT_ROOT / "runs" / run_id
 app_dir = run_root / "app"
 k6_dir = run_root / "k6"
 k6_dir.mkdir(parents=True, exist_ok=False)
@@ -148,7 +148,7 @@ try:
             "--quiet",
             "--out",
             f"json={k6_dir / 'metrics.json'}",
-            r"C:\Users\jmfel\AppData\Local\Temp\queue_service_time_profile.js",
+            str(K6_SCRIPT),
         ],
         env=environment,
         check=False,
