@@ -18,6 +18,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 K6_SCRIPT = Path(__file__).with_name("queue_service_time_profile.js")
 
 from experiments.queueing_demo.app import QueueingApp
+from experiments.queueing_demo.k6_runner import get_k6_version
 
 import argparse
 
@@ -27,6 +28,7 @@ parser.add_argument("--profile", choices=("original", "a", "b", "c"), default="o
 args = parser.parse_args()
 run_id = args.run_id
 service_time_seconds = 0.055
+k6_version = get_k6_version()
 profiles = {
     "original": [
         {"name": "baseline", "start_seconds": 0, "end_seconds": 30, "duration_seconds": 29.99, "rate_per_second": 10, "expected_requests": 300},
@@ -62,6 +64,7 @@ k6_dir.mkdir(parents=True, exist_ok=False)
         {
             "run_id": run_id,
             "profile": args.profile,
+            "k6_version": k6_version,
             "processor": "time.sleep",
             "service_time_seconds": service_time_seconds,
             "worker_count": 1,

@@ -46,6 +46,23 @@ def test_k6_launcher_claims_new_output_before_invoking_k6(tmp_path, monkeypatch)
     assert len(calls) == 1
 
 
+def test_k6_version_is_read_from_the_installed_executable(monkeypatch):
+    from experiments.queueing_demo import k6_runner
+
+    calls = []
+
+    def fake_run(command, **kwargs):
+        calls.append((command, kwargs))
+        return SimpleNamespace(stdout="k6 v2.2.0\n")
+
+    monkeypatch.setattr(k6_runner.subprocess, "run", fake_run)
+
+    version = k6_runner.get_k6_version(k6_executable="fake-k6")
+
+    assert version == "k6 v2.2.0"
+    assert calls == [(["fake-k6", "version"], {"capture_output": True, "text": True, "check": True})]
+
+
 def test_k6_launcher_refuses_existing_output_without_changing_it(tmp_path):
     output_dir = tmp_path / "existing-run"
     output_dir.mkdir()

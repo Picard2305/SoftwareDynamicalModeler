@@ -4,6 +4,16 @@ import subprocess
 from pathlib import Path
 
 
+def get_k6_version(k6_executable="k6"):
+    result = subprocess.run(
+        [k6_executable, "version"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    return result.stdout.strip()
+
+
 def run_k6(
     target_url,
     run_id,

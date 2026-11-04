@@ -2,8 +2,10 @@ import argparse
 import csv
 import json
 import statistics
+import subprocess
 import sys
 from datetime import datetime
+from importlib.metadata import version
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -19,10 +21,6 @@ from sdmodeler.identification.feature_library import build_feature_library, buil
 from sdmodeler.identification.optimizer import build_optimizer
 from sdmodeler.identification.plant_controller import build_plant_controller_data
 from sdmodeler.validation import normalized_rmse, simulate_forward
-
-parser = argparse.ArgumentParser()
-parser.add_argument("--output", type=Path)
-args = parser.parse_args()
 
 training_run_ids = [
     "queue-demo-service-time-55ms-profile-002",
@@ -51,6 +49,28 @@ config.differentiation.method = DifferentiationMethod.SAVITZKY_GOLAY
 config.differentiation.savgol_window_length = 7
 config.differentiation.savgol_polyorder = 2
 config.optimizer.sparsity_threshold_grid = [sparsity_threshold]
+
+
+def git_revision(repository_path):
+    return subprocess.run(
+        ["git", "-C", str(repository_path), "rev-parse", "HEAD"],
+        capture_output=True,
+        text=True,
+        check=True,
+    ).stdout.strip()
+
+
+def reproducibility_metadata(k6_versions_by_run):
+    return {
+        "repository_commit": git_revision(PROJECT_ROOT),
+        "sdmodeler_commit": git_revision(PROJECT_ROOT / "sdmodeler"),
+        "python_version": sys.version.split()[0],
+        "package_versions": {
+            package: version(package)
+            for package in ("numpy", "pandas", "pysindy", "scikit-learn", "pydantic")
+        },
+        "k6_versions_by_run": k6_versions_by_run,
+    }
 
 
 def parse_utc(value):
@@ -153,6 +173,7 @@ def load_run(run_id):
         "service_times": service_times,
         "phases": phases,
         "profile": experiment.get("profile", "training"),
+        "k6_version": experiment.get("k6_version", k6_summary.get("k6_version")),
         "sample_times": sample_times,
         "service_time_seconds": experiment["service_time_seconds"],
     }
@@ -262,101 +283,116 @@ def evaluate(model, actual, arrival_rate, sample_times, service_capacity, phases
     return results
 
 
-training_data = {run_id: load_run(run_id) for run_id in training_run_ids}
-held_out_data = {run_id: load_run(run_id) for run_id in held_out_run_ids}
-training_frames = [training_data[run_id]["frame"] for run_id in training_run_ids]
-training_service_times = [
-    service_time
-    for run_id in training_run_ids
-    for service_time in training_data[run_id]["service_times"]
-]
-mean_training_service_seconds = statistics.fmean(training_service_times)
-training_service_capacity = 1.0 / mean_training_service_seconds
-theta, dx = make_training_arrays(training_frames)
-optimizer = build_optimizer(config.optimizer, sparsity_threshold)
-optimizer.fit(theta, dx)
-coefficients = np.asarray(optimizer.coef_)
-model = SimpleNamespace(
-    coefficients=coefficients,
-    x_variables=["QueueDepth"],
-    u_variables=["ArrivalRate"],
-)
+def main(argv=None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", type=Path)
+    args = parser.parse_args(argv)
 
-folds = []
-for run_id, data in held_out_data.items():
-    actual = data["frame"]["QueueDepth"].to_numpy(dtype=float)
-    arrival_rate = data["frame"]["ArrivalRate"].to_numpy(dtype=float)
-    scores = evaluate(
-        model,
-        actual,
-        arrival_rate,
-        data["sample_times"],
-        training_service_capacity,
-        data["phases"],
-    )
-    folds.append(
-        {
-            "run_id": run_id,
-            "profile": data["profile"],
-            "phases": data["phases"],
-            "observed_peak_queue": float(np.max(actual)),
-            "scores": scores,
-        }
+    training_data = {run_id: load_run(run_id) for run_id in training_run_ids}
+    held_out_data = {run_id: load_run(run_id) for run_id in held_out_run_ids}
+    all_run_data = {**training_data, **held_out_data}
+    k6_versions_by_run = {
+        run_id: data["k6_version"] for run_id, data in all_run_data.items()
+    }
+    training_frames = [training_data[run_id]["frame"] for run_id in training_run_ids]
+    training_service_times = [
+        service_time
+        for run_id in training_run_ids
+        for service_time in training_data[run_id]["service_times"]
+    ]
+    mean_training_service_seconds = statistics.fmean(training_service_times)
+    training_service_capacity = 1.0 / mean_training_service_seconds
+    theta, dx = make_training_arrays(training_frames)
+    optimizer = build_optimizer(config.optimizer, sparsity_threshold)
+    optimizer.fit(theta, dx)
+    coefficients = np.asarray(optimizer.coef_)
+    model = SimpleNamespace(
+        coefficients=coefficients,
+        x_variables=["QueueDepth"],
+        u_variables=["ArrivalRate"],
     )
 
-metrics = (
-    "mae",
-    "rmse",
-    "normalized_rmse",
-    "absolute_peak_error",
-    "absolute_peak_time_error_seconds",
-)
-aggregate = {}
-for profile in sorted({fold["profile"] for fold in folds}):
-    profile_folds = [fold for fold in folds if fold["profile"] == profile]
-    aggregate[profile] = {}
-    for model_name in profile_folds[0]["scores"]:
-        aggregate[profile][model_name] = {
-            metric: {
-                "mean": float(np.mean([fold["scores"][model_name][metric] for fold in profile_folds])),
-                "min": float(np.min([fold["scores"][model_name][metric] for fold in profile_folds])),
-                "max": float(np.max([fold["scores"][model_name][metric] for fold in profile_folds])),
+    folds = []
+    for run_id, data in held_out_data.items():
+        actual = data["frame"]["QueueDepth"].to_numpy(dtype=float)
+        arrival_rate = data["frame"]["ArrivalRate"].to_numpy(dtype=float)
+        scores = evaluate(
+            model,
+            actual,
+            arrival_rate,
+            data["sample_times"],
+            training_service_capacity,
+            data["phases"],
+        )
+        folds.append(
+            {
+                "run_id": run_id,
+                "profile": data["profile"],
+                "phases": data["phases"],
+                "observed_peak_queue": float(np.max(actual)),
+                "scores": scores,
             }
-            for metric in metrics
-        }
+        )
 
-result = {
-    "experiment": "held-out new arrival profiles at fixed 55 ms service workload",
-    "state": "waiting queue depth reconstructed from accepted/completed timestamps under one-worker FIFO",
-    "forecast_inputs": "known arrival schedule and empty initial queue; no held-out completion or queue observations used as forecast inputs",
-    "training_run_ids": training_run_ids,
-    "held_out_run_ids": held_out_run_ids,
-    "service_workload_seconds": 0.055,
-    "training_mean_inferred_service_seconds": mean_training_service_seconds,
-    "training_estimated_capacity_per_second": training_service_capacity,
-    "configured_capacity_reference_per_second": 1.0 / 0.055,
-    "training_samples": int(theta.shape[0]),
-    "sparse_model": {
-        "feature_order": ["QueueDepth", "1", "u:ArrivalRate"],
-        "coefficients": coefficients.tolist(),
-        "optimizer": "STLSQ",
-        "sparsity_threshold": sparsity_threshold,
-        "differentiation": "Savitzky-Golay window 7, polynomial order 2",
-    },
-    "reflected_model": {
-        "equation": "Q[k] = max(0, Q[k-1] + (arrival_rate[k-1] - training_estimated_capacity) * 1 second)",
-        "service_capacity_estimator": "inverse mean FIFO-inferred service duration from training runs only",
-    },
-    "folds": folds,
-    "aggregate_by_profile": aggregate,
-    "interpretation_limit": "three replicates per held-out profile; exploratory estimates, not a confirmatory significance test",
-}
-serialized_result = json.dumps(result, indent=2, sort_keys=True, allow_nan=False)
-print(serialized_result)
-if args.output is not None:
-    output_path = args.output
-    if not output_path.is_absolute():
-        output_path = PROJECT_ROOT / output_path
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(serialized_result + "\n", encoding="utf-8")
-    print(f"saved_to={output_path}")
+    metrics = (
+        "mae",
+        "rmse",
+        "normalized_rmse",
+        "absolute_peak_error",
+        "absolute_peak_time_error_seconds",
+    )
+    aggregate = {}
+    for profile in sorted({fold["profile"] for fold in folds}):
+        profile_folds = [fold for fold in folds if fold["profile"] == profile]
+        aggregate[profile] = {}
+        for model_name in profile_folds[0]["scores"]:
+            aggregate[profile][model_name] = {
+                metric: {
+                    "mean": float(np.mean([fold["scores"][model_name][metric] for fold in profile_folds])),
+                    "min": float(np.min([fold["scores"][model_name][metric] for fold in profile_folds])),
+                    "max": float(np.max([fold["scores"][model_name][metric] for fold in profile_folds])),
+                }
+                for metric in metrics
+            }
+
+    result = {
+        "experiment": "held-out new arrival profiles at fixed 55 ms service workload",
+        "state": "waiting queue depth reconstructed from accepted/completed timestamps under one-worker FIFO",
+        "forecast_inputs": "known arrival schedule and empty initial queue; no held-out completion or queue observations used as forecast inputs",
+        "training_run_ids": training_run_ids,
+        "held_out_run_ids": held_out_run_ids,
+        "service_workload_seconds": 0.055,
+        "training_mean_inferred_service_seconds": mean_training_service_seconds,
+        "training_estimated_capacity_per_second": training_service_capacity,
+        "configured_capacity_reference_per_second": 1.0 / 0.055,
+        "training_samples": int(theta.shape[0]),
+        "sparse_model": {
+            "feature_order": ["QueueDepth", "1", "u:ArrivalRate"],
+            "coefficients": coefficients.tolist(),
+            "optimizer": "STLSQ",
+            "sparsity_threshold": sparsity_threshold,
+            "differentiation": "Savitzky-Golay window 7, polynomial order 2",
+        },
+        "reflected_model": {
+            "equation": "Q[k] = max(0, Q[k-1] + (arrival_rate[k-1] - training_estimated_capacity) * 1 second)",
+            "service_capacity_estimator": "inverse mean FIFO-inferred service duration from training runs only",
+        },
+        "folds": folds,
+        "aggregate_by_profile": aggregate,
+        "interpretation_limit": "three replicates per held-out profile; exploratory estimates, not a confirmatory significance test",
+        "reproducibility": reproducibility_metadata(k6_versions_by_run),
+    }
+    serialized_result = json.dumps(result, indent=2, sort_keys=True, allow_nan=False)
+    print(serialized_result)
+    if args.output is not None:
+        output_path = args.output
+        if not output_path.is_absolute():
+            output_path = PROJECT_ROOT / output_path
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(serialized_result + "\n", encoding="utf-8")
+        print(f"saved_to={output_path}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
