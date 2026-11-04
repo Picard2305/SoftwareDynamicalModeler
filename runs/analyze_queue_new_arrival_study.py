@@ -175,10 +175,11 @@ def make_training_arrays(frames):
 
 def evaluate(model, actual, arrival_rate, sample_times, service_capacity, phases):
     initial_state = np.array([0.0])
+    interval_arrival_rate = np.concatenate(([arrival_rate[0]], arrival_rate[:-1]))
     unbounded = simulate_forward(
         model,
         initial_state,
-        arrival_rate.reshape(-1, 1),
+        interval_arrival_rate.reshape(-1, 1),
         1.0,
         config.feature_library,
     )[:, 0]
@@ -196,7 +197,7 @@ def evaluate(model, actual, arrival_rate, sample_times, service_capacity, phases
 
     for index in range(1, len(actual)):
         previous = projected[index - 1]
-        rate = arrival_rate[index]
+        rate = arrival_rate[index - 1]
         k1 = derivative(previous, rate)
         k2 = derivative(max(0.0, previous + 0.5 * k1), rate)
         k3 = derivative(max(0.0, previous + 0.5 * k2), rate)
@@ -209,11 +210,11 @@ def evaluate(model, actual, arrival_rate, sample_times, service_capacity, phases
     for index in range(1, len(actual)):
         reflected[index] = max(
             0.0,
-            reflected[index - 1] + arrival_rate[index] - service_capacity,
+            reflected[index - 1] + arrival_rate[index - 1] - service_capacity,
         )
         configured[index] = max(
             0.0,
-            configured[index - 1] + arrival_rate[index] - configured_capacity,
+            configured[index - 1] + arrival_rate[index - 1] - configured_capacity,
         )
 
     predictions = {
@@ -339,7 +340,7 @@ result = {
         "differentiation": "Savitzky-Golay window 7, polynomial order 2",
     },
     "reflected_model": {
-        "equation": "Q[k] = max(0, Q[k-1] + (arrival_rate[k] - training_estimated_capacity) * 1 second)",
+        "equation": "Q[k] = max(0, Q[k-1] + (arrival_rate[k-1] - training_estimated_capacity) * 1 second)",
         "service_capacity_estimator": "inverse mean FIFO-inferred service duration from training runs only",
     },
     "folds": folds,
